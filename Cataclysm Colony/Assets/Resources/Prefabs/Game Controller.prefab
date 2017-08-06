@@ -1,0 +1,239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1173476996783672}
+  m_IsPrefabParent: 1
+--- !u!1 &1173476996783672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4549338140902330}
+  - component: {fileID: 114430027289755136}
+  m_Layer: 0
+  m_Name: Game Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1215848881823976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4534912198798448}
+  - component: {fileID: 114523273494093334}
+  m_Layer: 0
+  m_Name: Base Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1541661508581838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4911507799681132}
+  - component: {fileID: 114935415864966938}
+  m_Layer: 0
+  m_Name: World Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1979345565885090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4013622145767706}
+  - component: {fileID: 114891181174789326}
+  m_Layer: 0
+  m_Name: UIController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4013622145767706
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979345565885090}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.98901, y: -21.403782, z: 52.736065}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4549338140902330}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4534912198798448
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1215848881823976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4549338140902330}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4549338140902330
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1173476996783672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -41.916874, y: 11.150803, z: -12.493637}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4534912198798448}
+  - {fileID: 4911507799681132}
+  - {fileID: 4013622145767706}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4911507799681132
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1541661508581838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4549338140902330}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114430027289755136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1173476996783672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b809a8cc3f56483491dbb846c0d225f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  psc: {fileID: 0}
+  colonist_Controller: {fileID: 0}
+  base_Controller: {fileID: 114523273494093334}
+--- !u!114 &114523273494093334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1215848881823976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c2d18bc61d743b78082fae38295b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colonyBase:
+    colonistManager:
+      colonists: []
+      idleColonists: []
+      colonySkills: []
+    resourceManager:
+      energy: 0
+      metal: 0
+    plots: []
+    buildings:
+    - buildingName: Bunker
+      plot:
+        plotType: 0
+        plotNum: 0
+        building:
+          buildingName: 
+          plot:
+            plotType: 0
+            plotNum: 0
+            building:
+              buildingName: 
+              plot:
+                plotType: 0
+                plotNum: 0
+                building:
+                  buildingName: 
+                  totalColonistCapacity: 0
+                  jobCategory: 0
+              totalColonistCapacity: 0
+              jobCapacities: 
+              jobCategory: 0
+              resourceGeneration: []
+              resourceCapacity: []
+          totalColonistCapacity: 0
+          jobCapacities: 
+          jobCategory: 0
+          resourceGeneration: []
+          resourceCapacity: []
+      totalColonistCapacity: 0
+      jobCapacities: 
+      jobCategory: 0
+      resourceGeneration: []
+      resourceCapacity: []
+  base_obj: {fileID: 0}
+  wallParent: {fileID: 0}
+  wallController: {fileID: 0}
+--- !u!114 &114891181174789326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979345565885090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c370d793bab809441918d2accf40ccbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factoryUI: {fileID: 1672360684560794, guid: 40438e9764bbeca4ba54063510bea298, type: 2}
+--- !u!114 &114935415864966938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1541661508581838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b876f0a1284c79646b69be488e38c817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  world:
+    baseData:
+      colonistManager:
+        colonists: []
+        idleColonists: []
+        colonySkills: []
+      resourceManager:
+        energy: 0
+        metal: 0
+      plots: []
+      buildings: []
+    width: 0
+    height: 0
