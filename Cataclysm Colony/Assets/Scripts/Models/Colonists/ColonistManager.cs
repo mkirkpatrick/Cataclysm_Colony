@@ -5,8 +5,6 @@ using UnityEngine;
 [ System.Serializable ]
 public class ColonistManager {
 
-	public enum JobType { None, Builder, Engineer, Scientist, Medic, Farmer, Scout, Soldier}
-
     [System.NonSerialized]
     private Base colonistBase;
 
@@ -49,21 +47,28 @@ public class ColonistManager {
 
 	public void SetIdleColonist(Colonist col) {
 		AllocateColonistToBuilding (col, WorldController.Instance.world.baseData.buildings [0]);
-		col.currentJobType = JobType.None;
 		idleColonists.Add (col);
 	}
 
 	public void AllocateColonistToBuilding(Colonist colonist, Building building)
     {
-        if (building.allocatedColonists.Count < building.totalColonistCapacity)
-        {
-			//Remove from old building first
-			if (colonist.assignedBuilding != null)
-				colonist.assignedBuilding.allocatedColonists.Remove (colonist);
+		//Remove from old building first
+		if (colonist.assignedBuilding != null)
+			colonist.assignedBuilding.allocatedColonists.Remove (colonist);
 
-            building.allocatedColonists.Add(colonist);
-            colonist.assignedBuilding = building;
-        }
+        building.allocatedColonists.Add(colonist);
+        colonist.assignedBuilding = building;
             
+    }
+
+    public void AllocateColonistToTask(Colonist colonist, Task task)
+    {
+        //Remove from old building first
+        if (colonist.assignedTask != null)
+            colonist.assignedTask.allocatedColonists.Remove(colonist);
+
+        task.allocatedColonists.Add(colonist);
+        colonist.assignedTask = task;
+
     }
 }

@@ -3,6 +3,6 @@ using System.Collections.Generic;
 
 public class Task {
 
-    public enum TaskType { Attack }
+    public List<Colonist> allocatedColonists;
 
 }

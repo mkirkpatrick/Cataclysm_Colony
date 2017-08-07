@@ -15,25 +15,7 @@ public class ColonistController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		UpdateManHourTimer ();
-	}
-
-    //Timers
-	public void UpdateManHourTimer() {
-		updateTime += Time.deltaTime;
-
-		if (updateTime >= 1f) {
-			UpdateManHours ();
-			updateTime -= 1f;
-		}
-	}
-	public void UpdateManHours(){
-
-		float timeValue = 1f / (24f * 10f);
-
-		foreach( Colonist colonist in colonistManager.colonists ){
-			
-		}
+		
 	}
 
 }
