@@ -17,5 +17,9 @@ public class Building {
         totalColonistCapacity = 100;
     }
 
+    public void AllocateColonist(Colonist col) {
+
+    }
 
 }
+
