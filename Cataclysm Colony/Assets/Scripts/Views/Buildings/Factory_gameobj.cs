@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Factory_gameobj : Building_gameobj {
 
-    void Start()
-    {
-      
+    FactoryController factoryController;
+
+    void Start() {
+        factoryController = GameController.Instance.baseController.factoryController;
     }
 }

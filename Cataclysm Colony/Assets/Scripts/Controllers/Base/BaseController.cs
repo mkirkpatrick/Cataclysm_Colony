@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class BaseController : MonoBehaviour {
 
-    public Base colonyBase;
+    public Base baseData;
 	public GameObject base_obj;
-    public GameObject wallParent;
 
-    public WallController wallController;
+    public FactoryController factoryController;
 
 	// Use this for initialization
 	void Start () {
 
-        colonyBase = WorldController.Instance.world.baseData;
+        baseData = WorldController.Instance.world.baseData;
+
+        LinkControllers(); // Create controller scripts and attach building data to them
 
         //Create views and containers
         GameObject prefab = Resources.Load("Prefabs/Buildings/Base") as GameObject;
@@ -27,10 +28,14 @@ public class BaseController : MonoBehaviour {
    
     }
 
+    private void LinkControllers() {
+        factoryController.factoryData = baseData.buildings[1] as Factory;
+    }
+
 
 	public void ShowBase(GameObject baseObj){
 		
-		foreach (Building building in colonyBase.buildings) {
+		foreach (Building building in baseData.buildings) {
             
             PlaceBuilding (building, baseObj);
 		}

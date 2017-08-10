@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
 	public PlayerInfo playerInfo;
     public PlayerStatusController psc;
     public ColonistController colonist_Controller;
-    public BaseController base_Controller;
+    public BaseController baseController;
 
 
 	void Awake(){

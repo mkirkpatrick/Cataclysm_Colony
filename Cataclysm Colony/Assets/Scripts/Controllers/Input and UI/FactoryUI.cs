@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class FactoryUI : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public FactoryController factoryController;
+    public Factory factoryData;
+
+    void Start() {
+        factoryController = GameController.Instance.baseController.factoryController;
+        factoryData = factoryController.factoryData;
+    }
+
 }
