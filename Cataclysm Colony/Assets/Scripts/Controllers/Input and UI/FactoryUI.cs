@@ -1,15 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FactoryUI : MonoBehaviour {
 
     public FactoryController factoryController;
-    public Factory factoryData;
+
+    public Transform taskContentArea;
+    public GameObject taskButtonPrefab;
 
     void Start() {
         factoryController = GameController.Instance.baseController.factoryController;
-        factoryData = factoryController.factoryData;
+
+    }
+    void Update() {
+        
     }
 
+    void OnEnable() {
+        if (factoryController.factoryData.currentBuildTasks != null)
+            UpdateTaskList();
+    }
+
+    public void UpdateTaskList() {
+        foreach (FactoryBuildTask task in factoryController.factoryData.currentBuildTasks) {
+            GameObject newTaskButton = Instantiate(taskButtonPrefab, taskContentArea);
+            newTaskButton.GetComponent<FactoryTaskButton>().Init(task);
+        }
+    }
 }
