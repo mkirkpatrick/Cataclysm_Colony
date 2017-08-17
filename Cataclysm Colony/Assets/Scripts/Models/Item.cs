@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [ System.Serializable ]
 public class Item {
 
 	public int id;
     public string name;
-    public Sprite icon;
+    public Image icon;
     public string itemDescription;
 
     public float health;
@@ -30,6 +31,7 @@ public class ItemUpgrade {
 
     public string name = "Laser Rifle";
     public string upgradeDescription;
+    public float buildHours;
 
     public int[] requiredResearch; // {3, 56}
 

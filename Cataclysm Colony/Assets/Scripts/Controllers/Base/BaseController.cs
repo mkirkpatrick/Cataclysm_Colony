@@ -13,7 +13,6 @@ public class BaseController : MonoBehaviour {
 	void Start () {
 
         baseData = WorldController.Instance.world.baseData;
-
         LinkControllers(); // Create controller scripts and attach building data to them
 
         //Create views and containers
