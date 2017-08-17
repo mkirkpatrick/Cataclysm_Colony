@@ -108,6 +108,12 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &851048790 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931260874}
+  m_Script: {fileID: 11500000, guid: 16f1ec5b260e5d347862ffbf45546b2c, type: 3}
 --- !u!1 &1611412563
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +275,17 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: -1295.9999
       objectReference: {fileID: 0}
+    - target: {fileID: 114448030913607526, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: itemButtonPrefab
+      value: 
+      objectReference: {fileID: 1759734944356600, guid: 0972b25a69a16d64396767feab53d90f,
+        type: 2}
+    - target: {fileID: 224673806559239592, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224586107862166152, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
       propertyPath: m_AnchorMax.x
@@ -284,30 +301,11 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: -17
       objectReference: {fileID: 0}
-    - target: {fileID: 224673806559239592, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    - target: {fileID: 114430027289755136, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
-      propertyPath: m_SizeDelta.y
-      value: -1295.9999
-      objectReference: {fileID: 0}
-    - target: {fileID: 1619037100846440, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224961721254723892, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.00008606911
-      objectReference: {fileID: 0}
-    - target: {fileID: 224990941416614826, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224961721254723892, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.000055518605
-      objectReference: {fileID: 0}
+      propertyPath: databaseController
+      value: 
+      objectReference: {fileID: 851048790}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
   m_IsPrefabParent: 0

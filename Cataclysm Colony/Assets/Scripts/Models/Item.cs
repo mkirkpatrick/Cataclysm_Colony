@@ -31,6 +31,7 @@ public class ItemUpgrade {
 
     public string name = "Laser Rifle";
     public string upgradeDescription;
+    public float buildHours;
 
     public int[] requiredResearch; // {3, 56}
 

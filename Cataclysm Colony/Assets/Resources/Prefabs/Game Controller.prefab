@@ -302,6 +302,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1648127830807904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4351206169265052}
+  - component: {fileID: 114778708559375820}
+  m_Layer: 0
+  m_Name: Database Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1650385935316476
 GameObject:
   m_ObjectHideFlags: 1
@@ -486,6 +502,19 @@ Transform:
   m_Father: {fileID: 4549338140902330}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4351206169265052
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648127830807904}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 284.70755, y: 507.4199, z: -11.005859}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4549338140902330}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4534912198798448
 Transform:
   m_ObjectHideFlags: 1
@@ -513,6 +542,7 @@ Transform:
   - {fileID: 4534912198798448}
   - {fileID: 4911507799681132}
   - {fileID: 4013622145767706}
+  - {fileID: 4351206169265052}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -748,7 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   psc: {fileID: 0}
-  colonist_Controller: {fileID: 0}
+  worldController: {fileID: 114935415864966938}
   baseController: {fileID: 114523273494093334}
 --- !u!114 &114445986374321872
 MonoBehaviour:
@@ -789,49 +819,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoryController: {fileID: 0}
-  factoryData:
-    buildingName: Factory
-    plot:
-      plotType: 0
-      plotNum: 0
-      building:
-        buildingName: 
-        plot:
-          plotType: 0
-          plotNum: 0
-          building:
-            buildingName: 
-            plot:
-              plotType: 0
-              plotNum: 0
-              building:
-                buildingName: 
-                plot:
-                  plotType: 0
-                  plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    totalColonistCapacity: 100
-    currentBuildTasks: []
-    inventory:
-    - id: 0
-      name: 
-      icon: {fileID: 0}
-      itemDescription: 
-      health: 0
-      buildHours: 0
-      optimalColonistCount: 0
-      diminishingMultiplier: 0
-      requiredResearch: 00000000
-      currentUpgrade:
-        upgradedItemID: 0
-        name: Laser Rifle
-        upgradeDescription: 
-        requiredResearch: 
   taskContentArea: {fileID: 224961721254723892}
   taskButtonPrefab: {fileID: 1973369714207872, guid: b0e4887a1357fb74e8ceaf2c6172fcd3,
     type: 2}
+  itemContentArea: {fileID: 224961721254723892}
+  itemButtonPrefab: {fileID: 0}
 --- !u!114 &114514341114886872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1273,6 +1265,119 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Remaining Build Time
+--- !u!114 &114778708559375820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648127830807904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f1ec5b260e5d347862ffbf45546b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - id: 0
+    name: Assault Rifle
+    icon: {fileID: 0}
+    itemDescription: Standard rifle for shooting the bad guys.
+    health: 0
+    buildHours: 60
+    optimalColonistCount: 2
+    diminishingMultiplier: 0.2
+    requiredResearch: 
+    currentUpgrade:
+      upgradedItemID: 0
+      name: 
+      upgradeDescription: 
+      buildHours: 0
+      requiredResearch: 
+  - id: 1
+    name: Combat Knife
+    icon: {fileID: 0}
+    itemDescription: Really big knife for fighting when things get inside your personal
+      space. Unlimited ammo.
+    health: 0
+    buildHours: 30
+    optimalColonistCount: 2
+    diminishingMultiplier: 0.2
+    requiredResearch: 
+    currentUpgrade:
+      upgradedItemID: 0
+      name: 
+      upgradeDescription: 
+      buildHours: 0
+      requiredResearch: 
+  - id: 2
+    name: Tactical Binoculars
+    icon: {fileID: 0}
+    itemDescription: These binoculars allow colonists to obtain scouting information
+      from greater distances. Do not look at the sun.
+    health: 0
+    buildHours: 50
+    optimalColonistCount: 2
+    diminishingMultiplier: 0.4
+    requiredResearch: 
+    currentUpgrade:
+      upgradedItemID: 0
+      name: 
+      upgradeDescription: 
+      buildHours: 0
+      requiredResearch: 
+  - id: 3
+    name: Radio Pack
+    icon: {fileID: 0}
+    itemDescription: Standard radio equipment for reporting back to base.
+    health: 0
+    buildHours: 120
+    optimalColonistCount: 3
+    diminishingMultiplier: 0.4
+    requiredResearch: 
+    currentUpgrade:
+      upgradedItemID: 0
+      name: 
+      upgradeDescription: 
+      buildHours: 0
+      requiredResearch: 
+  - id: 4
+    name: Mounted Machine Gun
+    icon: {fileID: 0}
+    itemDescription: A large machine gun that requires a mount location. Can be set
+      up on vehicles or towers.
+    health: 0
+    buildHours: 300
+    optimalColonistCount: 4
+    diminishingMultiplier: 0.65
+    requiredResearch: 
+    currentUpgrade:
+      upgradedItemID: 0
+      name: 
+      upgradeDescription: 
+      buildHours: 0
+      requiredResearch: 
+  itemUpgrades:
+  - upgradedItemID: 0
+    name: Laser Rifle
+    upgradeDescription: Laser deal higher damage. They are more effective against
+      armor.
+    buildHours: 80
+    requiredResearch: 
+  - upgradedItemID: 0
+    name: Plasma Rifle
+    upgradeDescription: Very high damage with fabulous green shots. More effective
+      against shields.
+    buildHours: 140
+    requiredResearch: 
+  - upgradedItemID: 1
+    name: Katana
+    upgradeDescription: It's a knife. A really long badass knife.
+    buildHours: 140
+    requiredResearch: 
+  - upgradedItemID: 2
+    name: Recon X-9000 Goggles
+    upgradeDescription: See farther and collect target location data.
+    buildHours: 80
+    requiredResearch: 
 --- !u!114 &114779309361516010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2024,7 +2129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000055518605, y: -0.00008606911}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224990941416614826

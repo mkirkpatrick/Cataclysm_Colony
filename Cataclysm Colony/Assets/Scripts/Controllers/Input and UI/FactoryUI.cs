@@ -10,8 +10,11 @@ public class FactoryUI : MonoBehaviour {
     public Transform taskContentArea;
     public GameObject taskButtonPrefab;
 
+    public Transform itemContentArea;
+    public GameObject itemButtonPrefab;
+
     void Start() {
-        factoryController = GameController.Instance.baseController.factoryController;
+        
 
     }
     void Update() {
@@ -19,14 +22,28 @@ public class FactoryUI : MonoBehaviour {
     }
 
     void OnEnable() {
-        if (factoryController.factoryData.currentBuildTasks != null)
+
+        if (factoryController == null)
+            factoryController = GameController.Instance.baseController.factoryController;
+
+        if (factoryController.factoryData.currentBuildTasks.Count > 0)
             UpdateTaskList();
+
+        UpdateItemList();
     }
 
     public void UpdateTaskList() {
         foreach (FactoryBuildTask task in factoryController.factoryData.currentBuildTasks) {
             GameObject newTaskButton = Instantiate(taskButtonPrefab, taskContentArea);
             newTaskButton.GetComponent<FactoryTaskButton>().Init(task);
+        }
+    }
+    public void UpdateItemList()
+    {
+        foreach (Item item in GameController.Instance.databaseController.items)
+        {
+            GameObject newItemButton = Instantiate(itemButtonPrefab, itemContentArea);
+            newItemButton.GetComponent<FactoryItemButton>().Init(item);
         }
     }
 }
