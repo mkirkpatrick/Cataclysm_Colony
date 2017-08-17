@@ -14,4 +14,8 @@ public class FactoryItemButton : MonoBehaviour
         itemIcon = item.icon as Image;
         itemName.text = item.name;
     }
+
+    public void ItemButtonAction() {
+        Debug.Log(itemName.text);
+    }
 }

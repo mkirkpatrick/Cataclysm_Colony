@@ -108,12 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &851048790 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931260874}
-  m_Script: {fileID: 11500000, guid: 16f1ec5b260e5d347862ffbf45546b2c, type: 3}
 --- !u!1 &1611412563
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +209,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b93b9a0ca47894eb5f1bf97fb3722c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMovable: 1
+--- !u!1 &1677068830 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1619037100846440, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931260874}
 --- !u!1001 &1931260874
 Prefab:
   m_ObjectHideFlags: 0
@@ -275,17 +273,6 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: -1295.9999
       objectReference: {fileID: 0}
-    - target: {fileID: 114448030913607526, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemButtonPrefab
-      value: 
-      objectReference: {fileID: 1759734944356600, guid: 0972b25a69a16d64396767feab53d90f,
-        type: 2}
-    - target: {fileID: 224673806559239592, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 224586107862166152, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
       propertyPath: m_AnchorMax.x
@@ -301,11 +288,32 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: -17
       objectReference: {fileID: 0}
-    - target: {fileID: 114430027289755136, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    - target: {fileID: 224673806559239592, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
-      propertyPath: databaseController
+      propertyPath: m_SizeDelta.y
+      value: -1295.9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619037100846440, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891181174789326, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: factoryUI
       value: 
-      objectReference: {fileID: 851048790}
+      objectReference: {fileID: 1677068830}
+    - target: {fileID: 114448030913607526, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: taskButtonPrefab
+      value: 
+      objectReference: {fileID: 114649680414637208, guid: b0e4887a1357fb74e8ceaf2c6172fcd3,
+        type: 2}
+    - target: {fileID: 114448030913607526, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: itemButtonPrefab
+      value: 
+      objectReference: {fileID: 114069199945255270, guid: 0972b25a69a16d64396767feab53d90f,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
   m_IsPrefabParent: 0
