@@ -25,7 +25,7 @@ public class Terrain_gameobj : MonoBehaviour {
     void Init(ref Base playerBase) {
         GameObject basePrefab = Resources.Load("Prefabs/Buildings/Base") as GameObject;
         baseObj = Instantiate(basePrefab, transform, true);
-        baseObj.GetComponent<Base_gameobj>().baseData = playerBase;
+        baseObj.GetComponent<Base_gameobj>().baseController.baseData = playerBase;
     }
 
 }

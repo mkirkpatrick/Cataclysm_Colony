@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c829b001ca9840e4e943d58262381ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  factoryData:
+  buildingData:
     buildingName: 
     plot:
       plotType: 0
@@ -296,26 +296,10 @@ MonoBehaviour:
                 plot:
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 10
-                jobCapacities: 00000000000000000000000000000000000000000000000000000000
-                jobCategory: 0
-                resourceGeneration: []
-                resourceCapacity: []
-            totalColonistCapacity: 10
-            jobCapacities: 00000000000000000000000000000000000000000000000000000000
-            jobCategory: 0
-            resourceGeneration: []
-            resourceCapacity: []
-        totalColonistCapacity: 10
-        jobCapacities: 00000000000000000000000000000000000000000000000000000000
-        jobCategory: 0
-        resourceGeneration: []
-        resourceCapacity: []
-    totalColonistCapacity: 10
-    jobCapacities: 00000000000000000000000000000000000000000000000000000000
-    jobCategory: 0
-    resourceGeneration: []
-    resourceCapacity: []
+                totalColonistCapacity: 100
+            totalColonistCapacity: 100
+        totalColonistCapacity: 100
+    totalColonistCapacity: 100
 --- !u!136 &136119313790336052
 CapsuleCollider:
   m_ObjectHideFlags: 1

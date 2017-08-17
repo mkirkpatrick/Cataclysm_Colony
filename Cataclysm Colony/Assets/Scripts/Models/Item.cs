@@ -1,35 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
+[ System.Serializable ]
 public class Item {
 
-	int id;
-	string name;
-	Sprite icon;
-	string itemDescription;
+	public int id;
+    public string name;
+    public Image icon;
+    public string itemDescription;
 
-	float health;
+    public float health;
 
 
-	float buildHours; // Total hours to complete item
-	int optimalColonistCount; // How many colonist will get 100% efficency
-	float diminishingMultiplier;
+    public float buildHours; // Total hours to complete item
+    public int optimalColonistCount; // How many colonist will get 100% efficency
+    public float diminishingMultiplier;
 
-	int[] requiredResearch;
+    public int[] requiredResearch;
 
-	ItemUpgrade currentUpgrade;
+    public ItemUpgrade currentUpgrade;
 
 }
 
+[System.Serializable]
 public class ItemUpgrade {
 
-	int upgradedItemID;
+    public int upgradedItemID;
 
-	string name = "Laser Rifle";
-	string upgradeDescription;
+    public string name = "Laser Rifle";
+    public string upgradeDescription;
+    public float buildHours;
 
-	int[] requiredResearch; // {3, 56}
+    public int[] requiredResearch; // {3, 56}
 
 
 }

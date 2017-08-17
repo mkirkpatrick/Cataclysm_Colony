@@ -6,13 +6,14 @@ public class GameController : MonoBehaviour {
 
 	public static GameController Instance { get; protected set; }
 
-	public PlayerInfo playerInfo;
     public PlayerStatusController psc;
-    public ColonistController colonist_Controller;
-    public BaseController base_Controller;
+
+    public DatabaseController databaseController;
+    public WorldController worldController;
+    public BaseController baseController;
 
 
-	void Awake(){
+    void Awake(){
 
 		if (Instance == null) // check to see if the instance has a reference
 		{
@@ -27,7 +28,7 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
+        worldController.CreateNewWorld();
     }
 	
 	// Update is called once per frame
