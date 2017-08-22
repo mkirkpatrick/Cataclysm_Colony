@@ -12,6 +12,7 @@ public class Factory : Building {
         this.buildingName = "Factory";
         this.totalColonistCapacity = 100;
         this.allocatedColonists = new List<Colonist>();
+        this.currentBuildTasks = new List<FactoryBuildTask>();
     }
 
     public void AddBuildTask(Item item, int itemAmount, int colonistCount) {

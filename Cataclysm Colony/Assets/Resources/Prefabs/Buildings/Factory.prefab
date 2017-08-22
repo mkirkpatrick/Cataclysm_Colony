@@ -300,6 +300,7 @@ MonoBehaviour:
             totalColonistCapacity: 100
         totalColonistCapacity: 100
     totalColonistCapacity: 100
+  uiObject: FactoryUI
 --- !u!136 &136119313790336052
 CapsuleCollider:
   m_ObjectHideFlags: 1

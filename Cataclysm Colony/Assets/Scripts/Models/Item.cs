@@ -8,7 +8,7 @@ public class Item {
 
 	public int id;
     public string name;
-    public Image icon;
+    public Sprite icon;
     public string itemDescription;
 
     public float health;

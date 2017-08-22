@@ -108,12 +108,24 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &851048790 stripped
+--- !u!114 &640209763 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+  m_PrefabParentObject: {fileID: 114624895938956708, guid: 2d572a0793273e143bdc2c5cfa603b79,
     type: 2}
   m_PrefabInternal: {fileID: 1931260874}
-  m_Script: {fileID: 11500000, guid: 16f1ec5b260e5d347862ffbf45546b2c, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1111644845 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114863504902206310, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931260874}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1550927289 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114143820064060950, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931260874}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1611412563
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b93b9a0ca47894eb5f1bf97fb3722c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMovable: 1
 --- !u!1001 &1931260874
 Prefab:
   m_ObjectHideFlags: 0
@@ -223,6 +234,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -275,16 +291,10 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: -1295.9999
       objectReference: {fileID: 0}
-    - target: {fileID: 114448030913607526, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemButtonPrefab
-      value: 
-      objectReference: {fileID: 1759734944356600, guid: 0972b25a69a16d64396767feab53d90f,
-        type: 2}
     - target: {fileID: 224673806559239592, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -1295.9999
       objectReference: {fileID: 0}
     - target: {fileID: 224586107862166152, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
@@ -301,11 +311,352 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: -17
       objectReference: {fileID: 0}
-    - target: {fileID: 114430027289755136, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    - target: {fileID: 1619037100846440, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
-      propertyPath: databaseController
+      propertyPath: items.Array.data[0].icon
       value: 
-      objectReference: {fileID: 851048790}
+      objectReference: {fileID: 21300000, guid: 7273ff044cce5bf4b8a2305f785065a6,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[1].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 246bee6321505984887606ee93e08e0f,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[2].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: cab21a1d077484141a1c272b8d3f1d83,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[3].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 61de0d852c97ed840b1925db5e43e064,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[4].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
+        type: 3}
+    - target: {fileID: 114324569108759956, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: itemImage
+      value: 
+      objectReference: {fileID: 640209763}
+    - target: {fileID: 114324569108759956, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: itemName
+      value: 
+      objectReference: {fileID: 1111644845}
+    - target: {fileID: 114324569108759956, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: itemDescription
+      value: 
+      objectReference: {fileID: 1550927289}
+    - target: {fileID: 1694100056258956, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114514341114886872, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114514341114886872, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_Vertical
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114514341114886872, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_Horizontal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114514341114886872, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_Elasticity
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[5].id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[5].name
+      value: Mounted Machine Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[5].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[5].itemDescription
+      value: A large machine gun that requires a mount location. Can be set up on
+        vehicles or towers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[5].buildHours
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[5].optimalColonistCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[5].diminishingMultiplier
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[6].id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[6].name
+      value: Mounted Machine Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[6].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[6].itemDescription
+      value: A large machine gun that requires a mount location. Can be set up on
+        vehicles or towers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[6].buildHours
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[6].optimalColonistCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[6].diminishingMultiplier
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[7].id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[7].name
+      value: Mounted Machine Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[7].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[7].itemDescription
+      value: A large machine gun that requires a mount location. Can be set up on
+        vehicles or towers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[7].buildHours
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[7].optimalColonistCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[7].diminishingMultiplier
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[8].id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[8].name
+      value: Mounted Machine Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[8].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[8].itemDescription
+      value: A large machine gun that requires a mount location. Can be set up on
+        vehicles or towers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[8].buildHours
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[8].optimalColonistCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[8].diminishingMultiplier
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[9].id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[9].name
+      value: Mounted Machine Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[9].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[9].itemDescription
+      value: A large machine gun that requires a mount location. Can be set up on
+        vehicles or towers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[9].buildHours
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[9].optimalColonistCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[9].diminishingMultiplier
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[10].id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[10].name
+      value: Mounted Machine Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[10].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[10].itemDescription
+      value: A large machine gun that requires a mount location. Can be set up on
+        vehicles or towers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[10].buildHours
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[10].optimalColonistCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[10].diminishingMultiplier
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[11].id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[11].name
+      value: Mounted Machine Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[11].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
+        type: 3}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[11].itemDescription
+      value: A large machine gun that requires a mount location. Can be set up on
+        vehicles or towers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[11].buildHours
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[11].optimalColonistCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[11].diminishingMultiplier
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979345565885090, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114514341114886872, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_ScrollSensitivity
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114514341114886872, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_Inertia
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
   m_IsPrefabParent: 0
