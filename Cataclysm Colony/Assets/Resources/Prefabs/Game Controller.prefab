@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 224909538512785780}
   - component: {fileID: 222811446644509576}
   - component: {fileID: 114553194177729766}
+  - component: {fileID: 114324569108759956}
   m_Layer: 5
   m_Name: Description
   m_TagString: Untagged
@@ -678,6 +679,26 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!114 &114324569108759956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1694100056258956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0680814274c744a99a456ca818fc34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemImage: {fileID: 0}
+  itemName: {fileID: 0}
+  itemDescription: {fileID: 0}
+  currentUpgrade:
+    upgradedItemID: 0
+    name: Laser Rifle
+    upgradeDescription: 
+    buildHours: 0
+    requiredResearch: 
 --- !u!114 &114327196097489316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -821,11 +842,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   factoryController: {fileID: 0}
   taskContentArea: {fileID: 224961721254723892}
-  taskButtonPrefab: {fileID: 1973369714207872, guid: b0e4887a1357fb74e8ceaf2c6172fcd3,
+  taskButtonPrefab: {fileID: 114649680414637208, guid: b0e4887a1357fb74e8ceaf2c6172fcd3,
     type: 2}
   itemContentArea: {fileID: 224961721254723892}
-  itemButtonPrefab: {fileID: 1759734944356600, guid: 0972b25a69a16d64396767feab53d90f,
+  itemButtonPrefab: {fileID: 114069199945255270, guid: 0972b25a69a16d64396767feab53d90f,
     type: 2}
+  descriptionArea: {fileID: 114324569108759956}
+  selectedItem:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    itemDescription: 
+    health: 0
+    buildHours: 0
+    optimalColonistCount: 0
+    diminishingMultiplier: 0
+    requiredResearch: 
+    currentUpgrade:
+      upgradedItemID: 0
+      name: Laser Rifle
+      upgradeDescription: 
+      buildHours: 0
+      requiredResearch: 
 --- !u!114 &114514341114886872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1526,7 +1564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockOtherInput: 0
-  factoryUI: {fileID: 1280343856637942, guid: 302994910a5e38142b9354f032e765d0, type: 2}
+  factoryUI: {fileID: 114448030913607526}
 --- !u!114 &114927980161678398
 MonoBehaviour:
   m_ObjectHideFlags: 1

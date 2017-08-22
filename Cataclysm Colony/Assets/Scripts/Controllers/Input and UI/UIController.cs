@@ -8,7 +8,7 @@ public class UIController : MonoBehaviour {
 
     public bool lockOtherInput = false;
 
-    public GameObject factoryUI;
+    public FactoryUI factoryUI;
 
 	// Use this for initialization
 	void Awake () {
@@ -30,7 +30,7 @@ public class UIController : MonoBehaviour {
         switch (UIName) {
 
             case "FactoryUI":
-                factoryUI.SetActive(true);
+                factoryUI.gameObject.SetActive(true);
                 break;
 
         }

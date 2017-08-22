@@ -13,6 +13,11 @@ public class FactoryUI : MonoBehaviour {
     public Transform itemContentArea;
     public Button itemButtonPrefab;
 
+    public FactoryUIDescription descriptionArea;
+
+    public Task selectedTask;
+    public Item selectedItem;
+
     void Start() {
         
     }
@@ -60,4 +65,12 @@ public class FactoryUI : MonoBehaviour {
                 Destroy(childButton.gameObject);
         }
     }
+
+    public void ShowSelectedItem() {
+        descriptionArea.gameObject.SetActive(true);
+        descriptionArea.itemImage.sprite = selectedItem.icon;
+        descriptionArea.itemName.text = selectedItem.name;
+        descriptionArea.itemDescription.text = selectedItem.itemDescription;
+    }
+
 }

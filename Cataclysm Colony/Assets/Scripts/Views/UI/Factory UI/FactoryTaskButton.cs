@@ -8,7 +8,7 @@ public class FactoryTaskButton : MonoBehaviour {
     public Text completion;
 
     public void Init(FactoryBuildTask task) {
-        itemIcon = task.buildItem.icon as Image;
+        itemIcon.sprite = task.buildItem.icon;
         itemName.text = task.buildItem.name;
         completion.text = (task.hoursContributed / (task.buildItem.buildHours * task.itemBuildAmount)).ToString();
     }
