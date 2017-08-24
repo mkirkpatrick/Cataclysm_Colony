@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43668923, g: 0.48428386, b: 0.56452703, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -114,9 +114,27 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931260874}
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &797420899 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114538521985439180, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931260874}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &1111644845 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114863504902206310, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931260874}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1157464367 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114857183773424764, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931260874}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1306013445 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114391339544109174, guid: 2d572a0793273e143bdc2c5cfa603b79,
     type: 2}
   m_PrefabInternal: {fileID: 1931260874}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -294,7 +312,7 @@ Prefab:
     - target: {fileID: 224673806559239592, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -1295.9999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224586107862166152, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
@@ -313,7 +331,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1619037100846440, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
@@ -657,6 +675,29 @@ Prefab:
       propertyPath: m_Inertia
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114324569108759956, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: upgradeName
+      value: 
+      objectReference: {fileID: 797420899}
+    - target: {fileID: 114324569108759956, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: upgradeDescription
+      value: 
+      objectReference: {fileID: 1306013445}
+    - target: {fileID: 1931743862134316, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_Name
+      value: Hours
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825423514496214, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_Name
+      value: Cancel Build
+      objectReference: {fileID: 0}
+    - target: {fileID: 114324569108759956, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: hoursRemaining
+      value: 
+      objectReference: {fileID: 1157464367}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
   m_IsPrefabParent: 0

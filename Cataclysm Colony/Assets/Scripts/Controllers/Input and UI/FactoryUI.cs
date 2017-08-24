@@ -15,7 +15,7 @@ public class FactoryUI : MonoBehaviour {
 
     public FactoryUIDescription descriptionArea;
 
-    public Task selectedTask;
+    public FactoryBuildTask selectedTask;
     public Item selectedItem;
 
     void Start() {
@@ -56,7 +56,7 @@ public class FactoryUI : MonoBehaviour {
         {
             Button newItemButton = Instantiate(itemButtonPrefab, itemContentArea) as Button;
             newItemButton.GetComponent<FactoryItemButton>().Init(item);
-            newItemButton.onClick.AddListener(newItemButton.GetComponent<FactoryItemButton>().ItemButtonAction);
+            //newItemButton.onClick.AddListener(newItemButton.GetComponent<FactoryItemButton>().ItemButtonAction);
         }
     }
     public void ResetItemList() {
@@ -68,9 +68,16 @@ public class FactoryUI : MonoBehaviour {
 
     public void ShowSelectedItem() {
         descriptionArea.gameObject.SetActive(true);
-        descriptionArea.itemImage.sprite = selectedItem.icon;
-        descriptionArea.itemName.text = selectedItem.name;
-        descriptionArea.itemDescription.text = selectedItem.itemDescription;
+		UpdateDescription ();
+
     }
+	public void UpdateDescription(){
+		descriptionArea.itemImage.sprite = selectedTask.buildItem.icon;
+		descriptionArea.itemName.text = selectedTask.buildItem.name;
+		descriptionArea.itemDescription.text = selectedTask.buildItem.itemDescription;
+		descriptionArea.upgradeName.text = selectedTask.buildItem.currentUpgrade.name;
+		descriptionArea.upgradeDescription.text = selectedTask.buildItem.currentUpgrade.upgradeDescription;
+		descriptionArea.hoursRemaining.text = selectedTask.GetHoursRemaining ().ToString();
+	}
 
 }

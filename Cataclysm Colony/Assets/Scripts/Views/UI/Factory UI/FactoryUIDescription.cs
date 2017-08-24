@@ -9,5 +9,10 @@ public class FactoryUIDescription : MonoBehaviour {
     public Text itemName;
     public Text itemDescription;
 
+	public Text upgradeName;
+	public Text upgradeDescription;
+
+	public Text hoursRemaining;
+
     public ItemUpgrade currentUpgrade;
 }
