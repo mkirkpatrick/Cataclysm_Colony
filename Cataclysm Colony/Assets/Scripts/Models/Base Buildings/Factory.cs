@@ -8,11 +8,11 @@ public class Factory : Building {
 	public List<FactoryBuildTask> currentBuildTasks;
 	public List<Item> inventory;
 
-    public Factory()
-    {
+    public Factory() {
         this.buildingName = "Factory";
         this.totalColonistCapacity = 100;
         this.allocatedColonists = new List<Colonist>();
+        this.currentBuildTasks = new List<FactoryBuildTask>();
     }
 
     public void AddBuildTask(Item item, int itemAmount, int colonistCount) {

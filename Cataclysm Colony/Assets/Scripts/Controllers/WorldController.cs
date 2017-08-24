@@ -15,7 +15,6 @@ public class WorldController : MonoBehaviour {
         }
         else Destroy(this.gameObject);
 
-        CreateNewWorld();
     }
 	
 	// Update is called once per frame
@@ -23,7 +22,7 @@ public class WorldController : MonoBehaviour {
       
     }
 
-    private void CreateNewWorld() {
+    public void CreateNewWorld() {
         world = new World(100, 100);
     }
 }

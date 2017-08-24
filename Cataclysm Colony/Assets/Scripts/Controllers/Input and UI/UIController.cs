@@ -6,7 +6,9 @@ public class UIController : MonoBehaviour {
 
 	public static UIController Instance;
 
-    public GameObject factoryUI;
+    public bool lockOtherInput = false;
+
+    public FactoryUI factoryUI;
 
 	// Use this for initialization
 	void Awake () {
@@ -20,12 +22,17 @@ public class UIController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-       
+        
 	}
-    public void ToggleBuildMenu(bool toggleValue) {
-    
+
+    public void OpenUI(string UIName) {
+
+        switch (UIName) {
+
+            case "FactoryUI":
+                factoryUI.gameObject.SetActive(true);
+                break;
+
+        }
     }
-	public void BuildUIActivate(Building building){
-	
-	}
 }

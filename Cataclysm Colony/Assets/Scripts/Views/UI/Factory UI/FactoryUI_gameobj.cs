@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BuildController : MonoBehaviour {
-
-    public int buildingCategory;
-    public int buildingId;
+public class FactoryUI_gameobj : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

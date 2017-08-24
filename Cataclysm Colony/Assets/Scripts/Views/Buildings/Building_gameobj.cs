@@ -5,5 +5,6 @@ using UnityEngine;
 public class Building_gameobj : MonoBehaviour {
 
     public Building buildingData;
+    public string uiObject;
 
 }
