@@ -16,12 +16,10 @@ public class CameraController : MonoBehaviour
     private const int PanAngleMin = 60;
     private const int PanAngleMax = 80;
 
-	public bool cameraMovable = true;
-
     // Update is called once per frame
     void Update()
 	{
-		if (cameraMovable == true) {
+		if (UIController.Instance.lockOtherInput == false) {
 			MoveCamera ();
 		}   
 	}

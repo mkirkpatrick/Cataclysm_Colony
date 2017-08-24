@@ -8,14 +8,18 @@ public class FactoryUI : MonoBehaviour {
     public FactoryController factoryController;
 
     public Transform taskContentArea;
-    public GameObject taskButtonPrefab;
+    public Button taskButtonPrefab;
 
     public Transform itemContentArea;
-    public GameObject itemButtonPrefab;
+    public Button itemButtonPrefab;
+
+    public FactoryUIDescription descriptionArea;
+
+    public FactoryBuildTask selectedTask;
+    public Item selectedItem;
 
     void Start() {
         
-
     }
     void Update() {
         
@@ -26,24 +30,54 @@ public class FactoryUI : MonoBehaviour {
         if (factoryController == null)
             factoryController = GameController.Instance.baseController.factoryController;
 
+        UIController.Instance.lockOtherInput = true;
+
         if (factoryController.factoryData.currentBuildTasks.Count > 0)
             UpdateTaskList();
 
         UpdateItemList();
+        
+    }
+    void OnDisable() {
+        UIController.Instance.lockOtherInput = false;
     }
 
     public void UpdateTaskList() {
         foreach (FactoryBuildTask task in factoryController.factoryData.currentBuildTasks) {
-            GameObject newTaskButton = Instantiate(taskButtonPrefab, taskContentArea);
+            Button newTaskButton = Instantiate(taskButtonPrefab, taskContentArea);
             newTaskButton.GetComponent<FactoryTaskButton>().Init(task);
         }
     }
     public void UpdateItemList()
     {
+        ResetItemList();
+
         foreach (Item item in GameController.Instance.databaseController.items)
         {
-            GameObject newItemButton = Instantiate(itemButtonPrefab, itemContentArea);
+            Button newItemButton = Instantiate(itemButtonPrefab, itemContentArea) as Button;
             newItemButton.GetComponent<FactoryItemButton>().Init(item);
+            //newItemButton.onClick.AddListener(newItemButton.GetComponent<FactoryItemButton>().ItemButtonAction);
         }
     }
+    public void ResetItemList() {
+        foreach (Transform childButton in itemContentArea.transform) {
+            if (childButton.name == "Item Button(Clone)")
+                Destroy(childButton.gameObject);
+        }
+    }
+
+    public void ShowSelectedItem() {
+        descriptionArea.gameObject.SetActive(true);
+		UpdateDescription ();
+
+    }
+	public void UpdateDescription(){
+		descriptionArea.itemImage.sprite = selectedTask.buildItem.icon;
+		descriptionArea.itemName.text = selectedTask.buildItem.name;
+		descriptionArea.itemDescription.text = selectedTask.buildItem.itemDescription;
+		descriptionArea.upgradeName.text = selectedTask.buildItem.currentUpgrade.name;
+		descriptionArea.upgradeDescription.text = selectedTask.buildItem.currentUpgrade.upgradeDescription;
+		descriptionArea.hoursRemaining.text = selectedTask.GetHoursRemaining ().ToString();
+	}
+
 }

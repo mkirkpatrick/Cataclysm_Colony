@@ -21,16 +21,20 @@ public class Plot_gameobj : MonoBehaviour {
 
     void OnMouseEnter()
     {
-        rend.material.color = plotHover;
+        if (UIController.Instance.lockOtherInput == false)
+            rend.material.color = plotHover;
     }
 
     void OnMouseExit()
     {
-        rend.material.color = Color.clear;
+        if (UIController.Instance.lockOtherInput == false)
+            rend.material.color = Color.clear;
     }
 
     void OnMouseDown() {
-        Debug.Log(building_obj.buildingData.buildingName);
+        if (UIController.Instance.lockOtherInput == false)
+            UIController.Instance.OpenUI(building_obj.uiObject);
+            
     }
 
 }
