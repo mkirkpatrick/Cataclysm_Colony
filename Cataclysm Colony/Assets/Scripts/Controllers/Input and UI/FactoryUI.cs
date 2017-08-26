@@ -14,8 +14,11 @@ public class FactoryUI : MonoBehaviour {
     public Button itemButtonPrefab;
 
     public FactoryUIDescription descriptionArea;
+    public FactoryUIBuildOptions buildOptionsArea;
 
-    public Task selectedTask;
+    public Button upgradeButtonPrefab;
+
+    public FactoryBuildTask selectedTask;
     public Item selectedItem;
 
     void Start() {
@@ -56,7 +59,6 @@ public class FactoryUI : MonoBehaviour {
         {
             Button newItemButton = Instantiate(itemButtonPrefab, itemContentArea) as Button;
             newItemButton.GetComponent<FactoryItemButton>().Init(item);
-            newItemButton.onClick.AddListener(newItemButton.GetComponent<FactoryItemButton>().ItemButtonAction);
         }
     }
     public void ResetItemList() {
@@ -65,12 +67,37 @@ public class FactoryUI : MonoBehaviour {
                 Destroy(childButton.gameObject);
         }
     }
+    public void ResetUpgradeList()
+    {
+        foreach (Transform childButton in buildOptionsArea.upgradesContainer)
+                Destroy(childButton.gameObject);
+    }
 
     public void ShowSelectedItem() {
         descriptionArea.gameObject.SetActive(true);
-        descriptionArea.itemImage.sprite = selectedItem.icon;
-        descriptionArea.itemName.text = selectedItem.name;
-        descriptionArea.itemDescription.text = selectedItem.itemDescription;
+        UpdateDescription ();
+        UpdateBuildOptions();
+
+    }
+	public void UpdateDescription(){
+		descriptionArea.itemImage.sprite = selectedTask.buildItem.icon;
+		descriptionArea.itemName.text = selectedTask.buildItem.name;
+		descriptionArea.itemDescription.text = selectedTask.buildItem.itemDescription;
+		descriptionArea.upgradeName.text = selectedTask.buildItem.currentUpgrade.name;
+		descriptionArea.upgradeDescription.text = selectedTask.buildItem.currentUpgrade.upgradeDescription;
+		descriptionArea.hoursRemaining.text = selectedTask.GetHoursRemaining ().ToString();
+	}
+
+    public void UpdateBuildOptions() {
+
+        ResetUpgradeList();
+
+        ItemUpgrade[] upgrades = DatabaseController.Instance.GetAvailableItemUpgrades(selectedTask.buildItem);
+        foreach (ItemUpgrade upgrade in upgrades)
+        {
+            Button newUpgradeButton = Instantiate(upgradeButtonPrefab, buildOptionsArea.upgradesContainer);
+            newUpgradeButton.GetComponent<FactoryUpgradeButton>().Init(upgrade);
+        }
     }
 
 }

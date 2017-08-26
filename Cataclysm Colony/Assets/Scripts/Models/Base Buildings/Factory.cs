@@ -26,12 +26,21 @@ public class FactoryBuildTask : Task {
 
     public Item buildItem;
 
+	public int colonists;
     public int itemBuildAmount;
     public float hoursContributed = 0f;
 
     public FactoryBuildTask(Item item, int amount, int colonistCount) {
         buildItem = item;
         itemBuildAmount = amount;
+		colonists = colonistCount;
     }
+
+	public float GetHoursRemaining(){
+
+		float totalHours = buildItem.buildHours * itemBuildAmount;
+
+		return (totalHours - hoursContributed) / colonists;
+	}
 
 }
