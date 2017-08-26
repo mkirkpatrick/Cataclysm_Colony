@@ -29,6 +29,7 @@ public class ItemUpgrade {
 
     public int upgradedItemID;
 
+    public Sprite icon;
     public string name = "Laser Rifle";
     public string upgradeDescription;
     public float buildHours;
