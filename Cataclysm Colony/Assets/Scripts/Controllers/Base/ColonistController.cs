@@ -40,35 +40,31 @@ public class ColonistController : MonoBehaviour {
         }
     }
 
+	public void SetIdleColonist(Colonist col)
+	{
+		AllocateColonistToBuilding(col, WorldController.Instance.world.baseData.buildings[0]);
+		colonistBase.idleColonists.Add(col);
+	}
 
+	public void AllocateColonistToBuilding(Colonist colonist, Building building)
+	{
+		//Remove from old building first
+		if (colonist.assignedBuilding != null)
+			colonist.assignedBuilding.allocatedColonists.Remove(colonist);
+
+		building.allocatedColonists.Add(colonist);
+		colonist.assignedBuilding = building;
+
+	}
+
+	public void AllocateColonistToTask(Colonist colonist, Task task)
+	{
+		//Remove from old task first
+		if (colonist.assignedTask != null)
+			colonist.assignedTask.allocatedColonists.Remove(colonist);
+
+		task.allocatedColonists.Add(colonist);
+		colonist.assignedTask = task;
+
+	}
 }
-    /*
-    public void SetIdleColonist(Colonist col)
-    {
-        AllocateColonistToBuilding(col, WorldController.Instance.world.baseData.buildings[0]);
-        idleColonists.Add(col);
-    }
-
-    public void AllocateColonistToBuilding(Colonist colonist, Building building)
-    {
-        //Remove from old building first
-        if (colonist.assignedBuilding != null)
-            colonist.assignedBuilding.allocatedColonists.Remove(colonist);
-
-        building.allocatedColonists.Add(colonist);
-        colonist.assignedBuilding = building;
-
-    }
-
-    public void AllocateColonistToTask(Colonist colonist, Task task)
-    {
-        //Remove from old building first
-        if (colonist.assignedTask != null)
-            colonist.assignedTask.allocatedColonists.Remove(colonist);
-
-        task.allocatedColonists.Add(colonist);
-        colonist.assignedTask = task;
-
-    }
-}
-*/
