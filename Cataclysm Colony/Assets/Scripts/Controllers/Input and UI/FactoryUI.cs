@@ -30,6 +30,7 @@ public class FactoryUI : MonoBehaviour {
             gameObject.SetActive(false);
     }
 
+
     void OnEnable() {
 
         selectedItem = null;
@@ -91,6 +92,7 @@ public class FactoryUI : MonoBehaviour {
             Button newUpgradeButton = Instantiate(upgradeButtonPrefab, buildOptionsArea.upgradesContainer);
             newUpgradeButton.GetComponent<FactoryUpgradeButton>().Init(upgrade);
         }
+        Debug.Log(GameController.Instance.baseController.baseData.idleColonists.Count);
     }
 
     //Reset UI data

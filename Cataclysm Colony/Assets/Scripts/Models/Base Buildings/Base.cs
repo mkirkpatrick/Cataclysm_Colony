@@ -16,6 +16,9 @@ public class Base {
 
     public Base(int colonistCount) {
 
+        colonists = new List<Colonist>();
+        idleColonists = new List<Colonist>();
+
         plots = new List<Plot>();
         InitializePlots();
 
