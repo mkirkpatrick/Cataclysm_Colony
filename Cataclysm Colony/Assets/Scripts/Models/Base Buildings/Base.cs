@@ -14,7 +14,7 @@ public class Base {
     public List<Building> buildings;
     
 
-    public Base(int colonistCount) {
+    public Base() {
 
         colonists = new List<Colonist>();
         idleColonists = new List<Colonist>();
@@ -24,7 +24,7 @@ public class Base {
 
         buildings = new List<Building>();
 		AddBuilding( new Bunker(), plots[0] );
-        AddBuilding(new Factory(), plots[1]);
+        AddBuilding( new Factory(), plots[1] );
 
     }
 

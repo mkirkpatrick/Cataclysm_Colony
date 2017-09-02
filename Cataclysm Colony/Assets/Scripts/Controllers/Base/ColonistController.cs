@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class ColonistController : MonoBehaviour {
 
-    private Base colonistBase;
+    public Base colonistBase;
 
-    public float[] colonySkills;
+	void Start(){
+		colonistBase = GameController.Instance.baseController.baseData;
+		CreateColonists(5);
+	}
 
 
-
-    public List<Colonist> CreateColonists(int count)
+    public void CreateColonists(int count)
     {
-        List<Colonist> colonists = new List<Colonist>();
-
         for (int i = 0; i < count; i++)
         {
-            colonists.Add(new Colonist());
+			Colonist newColonist = new Colonist ();
+			colonistBase.colonists.Add(newColonist);
+			SetIdleColonist (newColonist);
         }
-        return colonists;
     }
 
     public Colonist GetIdleColonist()
@@ -30,7 +31,7 @@ public class ColonistController : MonoBehaviour {
         {
             col = colonistBase.idleColonists[0];
             colonistBase.idleColonists.RemoveAt(0);
-            WorldController.Instance.world.baseData.buildings[0].allocatedColonists.Remove(col);
+			colonistBase.buildings[0].allocatedColonists.Remove(col);
             return col;
         }
         else
@@ -42,7 +43,7 @@ public class ColonistController : MonoBehaviour {
 
 	public void SetIdleColonist(Colonist col)
 	{
-		AllocateColonistToBuilding(col, WorldController.Instance.world.baseData.buildings[0]);
+		AllocateColonistToBuilding(col, colonistBase.buildings[0]);
 		colonistBase.idleColonists.Add(col);
 	}
 
