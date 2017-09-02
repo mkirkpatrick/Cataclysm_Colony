@@ -9,10 +9,13 @@ public class BaseController : MonoBehaviour {
 
     public FactoryController factoryController;
 
-	// Use this for initialization
+	void Awake(){
+		baseData = new Base();
+	}
+
 	void Start () {
 
-        baseData = WorldController.Instance.world.baseData;
+
         LinkControllers(); // Create controller scripts and attach building data to them
 
         //Create views and containers

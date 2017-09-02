@@ -7,17 +7,18 @@ public class FactoryUI : MonoBehaviour {
 
     public FactoryController factoryController;
 
+    //UI sections
     public Transform taskContentArea;
-    public Button taskButtonPrefab;
-
     public Transform itemContentArea;
-    public Button itemButtonPrefab;
-
     public FactoryUIDescription descriptionArea;
     public FactoryUIBuildOptions buildOptionsArea;
 
+    //Prefabs
+    public Button itemButtonPrefab;
     public Button upgradeButtonPrefab;
+    public Button taskButtonPrefab;
 
+    //UI Data
     public FactoryBuildTask selectedTask;
     public Item selectedItem;
 
@@ -25,10 +26,15 @@ public class FactoryUI : MonoBehaviour {
         
     }
     void Update() {
-        
+        if ( Input.GetKeyDown(KeyCode.Escape) )
+            gameObject.SetActive(false);
     }
 
+
     void OnEnable() {
+
+        selectedItem = null;
+        selectedTask = null;
 
         if (factoryController == null)
             factoryController = GameController.Instance.baseController.factoryController;
@@ -45,6 +51,7 @@ public class FactoryUI : MonoBehaviour {
         UIController.Instance.lockOtherInput = false;
     }
 
+    //Update UI sections
     public void UpdateTaskList() {
         foreach (FactoryBuildTask task in factoryController.factoryData.currentBuildTasks) {
             Button newTaskButton = Instantiate(taskButtonPrefab, taskContentArea);
@@ -61,18 +68,6 @@ public class FactoryUI : MonoBehaviour {
             newItemButton.GetComponent<FactoryItemButton>().Init(item);
         }
     }
-    public void ResetItemList() {
-        foreach (Transform childButton in itemContentArea.transform) {
-            if (childButton.name == "Item Button(Clone)")
-                Destroy(childButton.gameObject);
-        }
-    }
-    public void ResetUpgradeList()
-    {
-        foreach (Transform childButton in buildOptionsArea.upgradesContainer)
-                Destroy(childButton.gameObject);
-    }
-
     public void ShowSelectedItem() {
         descriptionArea.gameObject.SetActive(true);
         UpdateDescription ();
@@ -87,7 +82,6 @@ public class FactoryUI : MonoBehaviour {
 		descriptionArea.upgradeDescription.text = selectedTask.buildItem.currentUpgrade.upgradeDescription;
 		descriptionArea.hoursRemaining.text = selectedTask.GetHoursRemaining ().ToString();
 	}
-
     public void UpdateBuildOptions() {
 
         ResetUpgradeList();
@@ -98,6 +92,22 @@ public class FactoryUI : MonoBehaviour {
             Button newUpgradeButton = Instantiate(upgradeButtonPrefab, buildOptionsArea.upgradesContainer);
             newUpgradeButton.GetComponent<FactoryUpgradeButton>().Init(upgrade);
         }
+        Debug.Log(GameController.Instance.baseController.baseData.idleColonists.Count);
+    }
+
+    //Reset UI data
+    public void ResetItemList()
+    {
+        foreach (Transform childButton in itemContentArea.transform)
+        {
+            if (childButton.name == "Item Button(Clone)")
+                Destroy(childButton.gameObject);
+        }
+    }
+    public void ResetUpgradeList()
+    {
+        foreach (Transform childButton in buildOptionsArea.upgradesContainer)
+            Destroy(childButton.gameObject);
     }
 
 }

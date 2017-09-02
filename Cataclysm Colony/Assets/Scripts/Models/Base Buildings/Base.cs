@@ -5,30 +5,26 @@ using UnityEngine;
 [ System.Serializable ]
 public class Base {
 
-	public ColonistManager colonistManager;
     public ResourceManager resourceManager;
+
+    public List<Colonist> colonists;
+    public List<Colonist> idleColonists;
 
     public List<Plot> plots;
     public List<Building> buildings;
     
 
-    public Base(int colonistCount) {
+    public Base() {
+
+        colonists = new List<Colonist>();
+        idleColonists = new List<Colonist>();
 
         plots = new List<Plot>();
         InitializePlots();
 
         buildings = new List<Building>();
 		AddBuilding( new Bunker(), plots[0] );
-        AddBuilding(new Factory(), plots[1]);
-
-        colonistManager = new ColonistManager(colonistCount);
-
-        //Assign all colonists to Bunker and Idle to start
-        foreach (Colonist col in colonistManager.colonists)
-        {
-            colonistManager.AllocateColonistToBuilding(col, buildings[0]);
-			colonistManager.idleColonists.Add (col);
-        }
+        AddBuilding( new Factory(), plots[1] );
 
     }
 

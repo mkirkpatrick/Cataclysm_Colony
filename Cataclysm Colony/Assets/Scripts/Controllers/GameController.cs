@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
     public DatabaseController databaseController;
     public WorldController worldController;
     public BaseController baseController;
+    public ColonistController colonistController;
 
 
     void Awake(){
