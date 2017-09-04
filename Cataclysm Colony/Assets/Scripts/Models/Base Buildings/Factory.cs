@@ -16,7 +16,7 @@ public class Factory : Building {
     }
 
     public void AddBuildTask(Item item, int itemAmount, int colonistCount) {
-        FactoryBuildTask newBuildTask = new FactoryBuildTask(item, itemAmount, colonistCount);
+        FactoryBuildTask newBuildTask = new FactoryBuildTask(item, itemAmount);
     }
 
 }
@@ -26,21 +26,19 @@ public class FactoryBuildTask : Task {
 
     public Item buildItem;
 
-	public int colonists;
     public int itemBuildAmount;
     public float hoursContributed = 0f;
 
-    public FactoryBuildTask(Item item, int amount, int colonistCount) {
+    public FactoryBuildTask(Item item, int amount) {
         buildItem = item;
         itemBuildAmount = amount;
-		colonists = colonistCount;
     }
 
 	public float GetHoursRemaining(){
 
 		float totalHours = buildItem.buildHours * itemBuildAmount;
 
-		return (totalHours - hoursContributed) / colonists;
+		return (totalHours - hoursContributed) / allocatedColonists.Count;
 	}
 
 }
