@@ -108,6 +108,12 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &234432025 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114891181174789326, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1030487553}
+  m_Script: {fileID: 11500000, guid: c370d793bab809441918d2accf40ccbb, type: 3}
 --- !u!1001 &1030487553
 Prefab:
   m_ObjectHideFlags: 0
@@ -115,6 +121,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114087252685852948, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -177,12 +188,36 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: -843.99994
       objectReference: {fileID: 0}
-    - target: {fileID: 114448030913607526, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    - target: {fileID: 114087252685852948, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
-      propertyPath: taskButtonPrefab
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087252685852948, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087252685852948, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 114100515762488546, guid: b0e4887a1357fb74e8ceaf2c6172fcd3,
+      objectReference: {fileID: 234432025}
+    - target: {fileID: 114087252685852948, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087252685852948, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087252685852948, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: FactoryUI
+      objectReference: {fileID: 0}
     - target: {fileID: 224586107862166152, guid: 2d572a0793273e143bdc2c5cfa603b79,
         type: 2}
       propertyPath: m_AnchorMax.x
@@ -382,19 +417,9 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114448030913607526, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: taskContentArea
-      value: 
-      objectReference: {fileID: 1075892665}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &1075892665 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224739978433932674, guid: 2d572a0793273e143bdc2c5cfa603b79,
-    type: 2}
-  m_PrefabInternal: {fileID: 1030487553}
 --- !u!1 &1611412563
 GameObject:
   m_ObjectHideFlags: 0

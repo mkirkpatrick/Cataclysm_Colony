@@ -35,4 +35,16 @@ public class UIController : MonoBehaviour {
 
         }
     }
+    public void CloseUI(string UIName)
+    {
+
+        switch (UIName)
+        {
+
+            case "FactoryUI":
+                factoryUI.gameObject.SetActive(false);
+                break;
+
+        }
+    }
 }
