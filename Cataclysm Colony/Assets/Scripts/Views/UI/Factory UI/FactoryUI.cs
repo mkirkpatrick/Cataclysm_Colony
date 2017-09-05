@@ -50,9 +50,10 @@ public class FactoryUI : MonoBehaviour {
     void OnDisable() {
         UIController.Instance.lockOtherInput = false;
     }
-
+    
     //Update UI sections
     public void UpdateTaskList() {
+        ResetTaskList();
         foreach (FactoryBuildTask task in factoryController.factoryData.currentBuildTasks) {
             Button newTaskButton = Instantiate(taskButtonPrefab, taskContentArea);
             newTaskButton.GetComponent<FactoryTaskButton>().Init(task);
@@ -70,7 +71,6 @@ public class FactoryUI : MonoBehaviour {
             newItemButton.GetComponent<FactoryItemButton>().Init(item);
         }
     }
-
     public void ShowSelectedItem() {
         descriptionArea.gameObject.SetActive(true);
         buildOptionsArea.gameObject.SetActive(true);
@@ -78,8 +78,13 @@ public class FactoryUI : MonoBehaviour {
         UpdateBuildOptions();
 
     }
-
-	public void UpdateDescription(){
+    public void ShowSelectedTask() {
+        descriptionArea.gameObject.SetActive(true);
+        buildOptionsArea.gameObject.SetActive(true);
+        UpdateDescription();
+        UpdateBuildOptions();
+    }
+    public void UpdateDescription(){
 
         descriptionArea.hoursRemaining.gameObject.transform.parent.gameObject.SetActive(false);
         descriptionArea.itemImage.sprite = factoryUIData.selectedItem.icon;
@@ -95,7 +100,6 @@ public class FactoryUI : MonoBehaviour {
             descriptionArea.upgradeDescription.text = "";
         }
 	}
-
     public void UpdateBuildOptions() {
 
         ResetUpgradeList();
@@ -134,11 +138,19 @@ public class FactoryUI : MonoBehaviour {
 }
 
     //Reset UI data
+    public void ResetTaskList()
+    {
+        foreach (Transform childButton in taskContentArea.transform)
+        {
+            if (childButton.name == "Task Button(Clone)")
+                Destroy(childButton.gameObject);
+        }
+    }
     public void ResetItemList()
     {
         foreach (Transform childButton in itemContentArea.transform)
         {
-            if (childButton.name == "Item Button(Clone)")
+            if (childButton.name == "Items Container(Clone)")
                 Destroy(childButton.gameObject);
         }
     }
@@ -151,6 +163,11 @@ public class FactoryUI : MonoBehaviour {
         factoryUIData.selectedItem = null;
         factoryUIData.selectedTask = null;
         factoryUIData.selectedUpgrade = null;
+    }
+
+    public void AddBuildTask() {
+        factoryController.AddFactoryTask(factoryUIData);
+        UpdateTaskList();
     }
 }
 

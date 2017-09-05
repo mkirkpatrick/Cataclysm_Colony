@@ -64,7 +64,7 @@ public class ColonistController : MonoBehaviour {
 		if (colonist.assignedTask != null)
 			colonist.assignedTask.allocatedColonists.Remove(colonist);
 
-		task.allocatedColonists.Add(colonist);
+        task.allocatedColonists.Add(colonist);
 		colonist.assignedTask = task;
 
 	}
