@@ -8,7 +8,7 @@ public class ColonistController : MonoBehaviour {
 
 	void Start(){
 		colonistBase = GameController.Instance.baseController.baseData;
-		CreateColonists(55);
+		CreateColonists(100);
 	}
 
 
