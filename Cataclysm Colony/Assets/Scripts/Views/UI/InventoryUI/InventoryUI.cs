@@ -7,7 +7,7 @@ public class InventoryUI : MonoBehaviour {
 
 	public InventoryController inventoryController;
 
-	public Dictionary<Item,int> itemCounts;
+	public Dictionary<string,int> itemCounts;
 
 	public Transform itemsContainer;
 
@@ -35,19 +35,21 @@ public class InventoryUI : MonoBehaviour {
 	public void UpdateItems(){
 		ResetInventory ();
 
-		itemCounts = new Dictionary<Item,int>();
+		itemCounts = new Dictionary<string,int>();
+		Debug.Log (inventoryController.totalItems.Count);
 
 		foreach(Item item in inventoryController.totalItems){
-			if (itemCounts.ContainsKey(item)){
-				itemCounts[item] = itemCounts[item]+1;
+			if (itemCounts.ContainsKey(item.name)){
+				itemCounts[item.name] = itemCounts[item.name]+1;
 			} else {
-				itemCounts[item] = 1;
+				itemCounts[item.name] = 1;
 			}
 		}
 
-		foreach (Item item in itemCounts.Keys) {
+		foreach (string itemName in itemCounts.Keys) {
 			Button newButton = Instantiate (invenoryButton, itemsContainer.transform);
-			newButton.GetComponent<ItemInventoryButton> ().Init (item, itemCounts[item]);
+			Item newItem = DatabaseController.Instance.GetItemByName (itemName);
+			newButton.GetComponent<ItemInventoryButton> ().Init (newItem, itemCounts[itemName]);
 		}
 			
 	}

@@ -22,6 +22,10 @@ public class Item {
 
     public ItemUpgrade currentUpgrade;
 
+	public Item(){
+		currentUpgrade = new ItemUpgrade ();
+	}
+
 }
 
 [System.Serializable]
@@ -30,11 +34,16 @@ public class ItemUpgrade {
     public int upgradedItemID;
 
     public Sprite icon;
-    public string name = "Laser Rifle";
+    public string name;
     public string upgradeDescription;
     public float buildHours;
 
     public int[] requiredResearch; // {3, 56}
 
-
+	public ItemUpgrade(){
+		name = "";
+		icon = new Sprite ();
+		upgradeDescription = "";
+		buildHours = 0f;
+	}
 }

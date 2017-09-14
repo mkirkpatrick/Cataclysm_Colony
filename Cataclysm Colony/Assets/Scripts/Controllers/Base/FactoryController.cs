@@ -10,9 +10,7 @@ public class FactoryController : MonoBehaviour {
         
     }
     void Update() {
-        foreach (FactoryBuildTask task in factoryData.currentBuildTasks) {
-            task.hoursContributed += (( Time.deltaTime * task.allocatedColonists.Count) / 60f);
-        }
+		UpdateTaskHours ();
     }
 
     public void AddFactoryTask(FactoryUIData taskData) {
@@ -38,4 +36,42 @@ public class FactoryController : MonoBehaviour {
 
         factoryData.currentBuildTasks.Add(newFactoryTask);
     }
+	public void RemoveFactoryTask(FactoryBuildTask task) {
+
+		foreach (Colonist colonist in task.allocatedColonists) {
+			GameController.Instance.colonistController.SetIdleColonist (colonist);
+		}
+
+		factoryData.currentBuildTasks.Remove (task);
+		UIController.Instance.factoryUI.UpdateTaskList ();
+	}
+
+	public void UpdateTaskHours(){
+		List<FactoryBuildTask> removalList = new List<FactoryBuildTask> ();
+
+		foreach (FactoryBuildTask task in factoryData.currentBuildTasks) {
+			task.hoursContributed += (task.allocatedColonists.Count * Time.deltaTime / 60f);
+
+			int newItemCount = Mathf.FloorToInt (task.hoursContributed / task.buildItem.buildHours);
+			if ((newItemCount - task.itemsBuiltSoFar) == 1) {
+				BuildItem (task.buildItem);
+				task.itemsBuiltSoFar++;
+			}
+
+			if (task.itemsBuiltSoFar == task.itemBuildAmount)
+				removalList.Add(task);
+		}
+
+		foreach (FactoryBuildTask task in removalList)
+			RemoveFactoryTask (task);
+	
+	}
+
+	public void BuildItem(Item item){
+		Item newItem = DatabaseController.Instance.GetItemByName (item.name);
+		GameController.Instance.inventoryController.totalItems.Add (newItem);
+		GameController.Instance.inventoryController.availableItems.Add (newItem);
+		if (UIController.Instance.inventoryUI.enabled == true)
+			UIController.Instance.inventoryUI.UpdateItems ();
+	}
 }
