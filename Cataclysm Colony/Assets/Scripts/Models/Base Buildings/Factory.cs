@@ -15,10 +15,6 @@ public class Factory : Building {
         this.currentBuildTasks = new List<FactoryBuildTask>();
     }
 
-    public void AddBuildTask(Item item, int itemAmount, int colonistCount) {
-        FactoryBuildTask newBuildTask = new FactoryBuildTask(item, itemAmount, colonistCount);
-    }
-
 }
 
 [System.Serializable]
@@ -26,21 +22,30 @@ public class FactoryBuildTask : Task {
 
     public Item buildItem;
 
-	public int colonists;
     public int itemBuildAmount;
+	public int itemsBuiltSoFar = 0;
     public float hoursContributed = 0f;
 
-    public FactoryBuildTask(Item item, int amount, int colonistCount) {
+    public FactoryBuildTask(FactoryUIData taskData) {
+        buildItem = taskData.selectedItem;
+        itemBuildAmount = taskData.buildCount;
+        buildItem.currentUpgrade = taskData.selectedUpgrade;
+    }
+    public FactoryBuildTask(Item item, int buildAmount)
+    {
         buildItem = item;
-        itemBuildAmount = amount;
-		colonists = colonistCount;
+        itemBuildAmount = buildAmount;
+        buildItem.currentUpgrade = item.currentUpgrade;
     }
 
-	public float GetHoursRemaining(){
+    public float GetHoursRemaining(){
 
 		float totalHours = buildItem.buildHours * itemBuildAmount;
 
-		return (totalHours - hoursContributed) / colonists;
+        if (buildItem.currentUpgrade != null)
+            totalHours += (buildItem.currentUpgrade.buildHours * itemBuildAmount);
+
+		return (totalHours - hoursContributed) / allocatedColonists.Count;
 	}
 
 }

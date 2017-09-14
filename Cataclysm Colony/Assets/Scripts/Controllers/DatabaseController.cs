@@ -24,7 +24,7 @@ public class DatabaseController : MonoBehaviour {
         foreach (Item item in items)
         {
             if (item.name == name)
-                return item;
+				return CreateNewItemCopy( item );
         }
         return null;
     }
@@ -41,4 +41,19 @@ public class DatabaseController : MonoBehaviour {
         return upgrades.ToArray();
     }
 
+	private Item CreateNewItemCopy(Item item){
+		Item newItem = new Item();
+		newItem.name = item.name;
+		newItem.icon = item.icon;
+		newItem.itemDescription = item.itemDescription;
+		newItem.health = item.health;
+
+		if (newItem.currentUpgrade != null) {
+			newItem.currentUpgrade.name = item.currentUpgrade.name;
+			newItem.currentUpgrade.icon = item.currentUpgrade.icon;
+			newItem.currentUpgrade.upgradeDescription = item.currentUpgrade.upgradeDescription;
+		}
+			
+		return newItem;
+	}
 }

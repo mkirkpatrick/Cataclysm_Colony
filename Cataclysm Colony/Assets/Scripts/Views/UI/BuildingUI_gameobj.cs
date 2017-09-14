@@ -19,26 +19,4 @@ public class BuildingUI_gameobj : MonoBehaviour {
 		else
 			allocatedColonists.text = "0";
 	}
-
-	public void AllocateColonist(){
-
-		if (buildingData.allocatedColonists.Count < buildingData.totalColonistCapacity) {
-			Colonist col = WorldController.Instance.world.baseData.colonistManager.GetIdleColonist();
-			if (col != null) {
-				WorldController.Instance.world.baseData.colonistManager.AllocateColonistToBuilding (col, buildingData);
-				UpdateUI ();
-			}
-		}
-	}
-	public void DeallocateColonist(){
-
-		if (buildingData.allocatedColonists.Count > 0) {
-			Colonist col = buildingData.allocatedColonists [0];
-			buildingData.allocatedColonists.RemoveAt(0);
-			WorldController.Instance.world.baseData.colonistManager.SetIdleColonist(col);
-
-			UpdateUI ();
-		}
-
-	}
 }

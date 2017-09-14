@@ -5,9 +5,6 @@ using UnityEngine;
 [ System.Serializable ]
 public class World {
 
-   // [ System.NonSerialized ]
-    public Base baseData;
-
     public int width;
     public int height;
 
@@ -15,8 +12,6 @@ public class World {
 
         width = w;
         height = h;
-
-        baseData = new Base(100);
 
     }
     public World() { }

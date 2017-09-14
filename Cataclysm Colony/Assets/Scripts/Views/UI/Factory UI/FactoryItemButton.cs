@@ -21,7 +21,8 @@ public class FactoryItemButton : MonoBehaviour
     }
 
     public void ItemButtonAction() {
-		UIController.Instance.factoryUI.selectedTask = new FactoryBuildTask(buttonItem, 1, 1);
+        UIController.Instance.factoryUI.ResetUIData();
+        UIController.Instance.factoryUI.factoryUIData = new FactoryUIData(buttonItem);
         UIController.Instance.factoryUI.ShowSelectedItem();
     }
 }

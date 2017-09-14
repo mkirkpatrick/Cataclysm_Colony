@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour {
     public bool lockOtherInput = false;
 
     public FactoryUI factoryUI;
+	public InventoryUI inventoryUI;
 
 	// Use this for initialization
 	void Awake () {
@@ -22,7 +23,8 @@ public class UIController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+		if (Input.GetKeyDown (KeyCode.I))
+			OpenUI ("InventoryUI");
 	}
 
     public void OpenUI(string UIName) {
@@ -32,6 +34,24 @@ public class UIController : MonoBehaviour {
             case "FactoryUI":
                 factoryUI.gameObject.SetActive(true);
                 break;
+			case "InventoryUI":
+				inventoryUI.gameObject.SetActive(true);
+				break;
+
+        }
+    }
+    public void CloseUI(string UIName)
+    {
+
+        switch (UIName)
+        {
+
+            case "FactoryUI":
+                factoryUI.gameObject.SetActive(false);
+                break;
+			case "InventoryUI":
+				inventoryUI.gameObject.SetActive(false);
+				break;
 
         }
     }

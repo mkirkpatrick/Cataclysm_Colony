@@ -19,7 +19,7 @@ public class FactoryUpgradeButton : MonoBehaviour {
 
     public void UpgradeButtonAction()
     {
-        UIController.Instance.factoryUI.selectedTask.buildItem.currentUpgrade = buttonUpgrade;
+        UIController.Instance.factoryUI.factoryUIData.selectedUpgrade = buttonUpgrade;
         UIController.Instance.factoryUI.UpdateDescription();
     }
 }
