@@ -23,6 +23,7 @@ public class FactoryBuildTask : Task {
     public Item buildItem;
 
     public int itemBuildAmount;
+	public int itemsBuiltSoFar = 0;
     public float hoursContributed = 0f;
 
     public FactoryBuildTask(FactoryUIData taskData) {

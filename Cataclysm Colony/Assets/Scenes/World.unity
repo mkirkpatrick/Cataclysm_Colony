@@ -152,6 +152,45 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1611412567}
+    - target: {fileID: 1952440369844200, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114062954727315600, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[0].currentUpgrade.name
+      value: None
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[0].currentUpgrade.upgradeDescription
+      value: None
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[1].currentUpgrade.name
+      value: None
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[1].currentUpgrade.upgradeDescription
+      value: None
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[2].currentUpgrade.name
+      value: None
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: items.Array.data[2].currentUpgrade.upgradeDescription
+      value: None
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
   m_IsPrefabParent: 0

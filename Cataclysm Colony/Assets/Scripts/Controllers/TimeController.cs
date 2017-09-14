@@ -16,10 +16,19 @@ public class TimeController : MonoBehaviour {
     public bool isPaused = false;
 
 	void Start () {
-        
+		ChangeTimeScale (4f); //Start clock at 4x time
 	}
 	
 	void Update () {
+
+		//Quick key clock speed changes
+		if (Input.GetKeyDown (KeyCode.Alpha1))
+			ChangeTimeScale (4);
+		else if (Input.GetKeyDown (KeyCode.Alpha2))
+			ChangeTimeScale (8);
+		else if (Input.GetKeyDown (KeyCode.Alpha3))
+			ChangeTimeScale (12);
+
         if (isPaused != true) {
             UpdateClocks();
         }
@@ -30,9 +39,9 @@ public class TimeController : MonoBehaviour {
         gameClock += Time.deltaTime;
 
         float timeChange = gameClock - startTime;
-        currentTime += timeChange * timeMultiplier;
+        currentTime += timeChange;
 
-            minutes += timeChange * timeMultiplier;
+            minutes += timeChange;
         if (minutes >= 60) {
             //Check for 6am day change
             if (hours == 5)
@@ -41,10 +50,13 @@ public class TimeController : MonoBehaviour {
             hours++;
         }
 
-        if (hours >= 24)
-        {
+        if (hours >= 24) {
             hours -= 24;
         }
         
     }
+
+	public void ChangeTimeScale(float timeScale){
+		Time.timeScale = timeScale;
+	}
 }
