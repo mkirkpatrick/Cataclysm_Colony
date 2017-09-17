@@ -8,7 +8,8 @@ public class InventoryController : MonoBehaviour {
 	public List<Item> availableItems;
 
 	void Start(){
-		
+		totalItems = new List<Item> ();
+		availableItems = new List<Item> ();
 	}
 
 	public int GetItemCount(Item item){

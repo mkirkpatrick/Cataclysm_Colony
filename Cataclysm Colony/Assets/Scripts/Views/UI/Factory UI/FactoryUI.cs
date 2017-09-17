@@ -90,25 +90,18 @@ public class FactoryUI : MonoBehaviour {
         descriptionArea.itemImage.sprite = factoryUIData.selectedItem.icon;
         descriptionArea.itemName.text = factoryUIData.selectedItem.name;
         descriptionArea.itemDescription.text = factoryUIData.selectedItem.itemDescription;
+		descriptionArea.upgradeName.text = factoryUIData.selectedItem.upgrades[factoryUIData.selectedUpgrade].name;
+		descriptionArea.upgradeDescription.text = factoryUIData.selectedItem.upgrades[factoryUIData.selectedUpgrade].upgradeDescription;
 
-        if (factoryUIData.selectedUpgrade != null) {
-            descriptionArea.upgradeName.text = factoryUIData.selectedUpgrade.name;
-            descriptionArea.upgradeDescription.text = factoryUIData.selectedUpgrade.upgradeDescription;
-        }
-        else {
-            descriptionArea.upgradeName.text = "No Upgrade Selected";
-            descriptionArea.upgradeDescription.text = "";
-        }
 	}
     public void UpdateBuildOptions() {
 
         ResetUpgradeList();
 
-        ItemUpgrade[] upgrades = DatabaseController.Instance.GetAvailableItemUpgrades(factoryUIData.selectedItem);
-        foreach (ItemUpgrade upgrade in upgrades)
+		for (int i = 0; i < factoryUIData.selectedItem.upgrades.Count; i++)
         {
             Button newUpgradeButton = Instantiate(upgradeButtonPrefab, buildOptionsArea.upgradesContainer);
-            newUpgradeButton.GetComponent<FactoryUpgradeButton>().Init(upgrade);
+			newUpgradeButton.GetComponent<FactoryUpgradeButton>().Init(factoryUIData.selectedItem, i);
         }
     }
 
@@ -162,7 +155,6 @@ public class FactoryUI : MonoBehaviour {
     public void ResetUIData() {
         factoryUIData.selectedItem = null;
         factoryUIData.selectedTask = null;
-        factoryUIData.selectedUpgrade = null;
     }
 
     public void AddBuildTask() {
@@ -175,7 +167,7 @@ public class FactoryUI : MonoBehaviour {
 public class FactoryUIData {
     public FactoryBuildTask selectedTask;
     public Item selectedItem;
-    public ItemUpgrade selectedUpgrade;
+    public int selectedUpgrade;
 
     public int currentInventoryCount;
     public int buildCount;
