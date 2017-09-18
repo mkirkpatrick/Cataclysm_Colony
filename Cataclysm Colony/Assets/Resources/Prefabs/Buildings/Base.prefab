@@ -758,7 +758,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1773448870267368}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.688799, y: -1.6827726e-17, z: 37.892666}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4318807116276378}
@@ -2369,22 +2369,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114278285501828114
@@ -2421,22 +2408,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114305562987391310
@@ -2473,22 +2447,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114316089061317406
@@ -2525,22 +2486,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114327455256891790
@@ -2577,22 +2525,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114350769062801554
@@ -2629,22 +2564,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114367949564339956
@@ -2681,22 +2603,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114435774881380928
@@ -2733,22 +2642,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114453855759168498
@@ -2785,22 +2681,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114524306806799804
@@ -2837,22 +2720,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114550412264622874
@@ -2889,22 +2759,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114621251883423562
@@ -2941,22 +2798,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114626675283388376
@@ -2993,22 +2837,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114628599672405936
@@ -3045,22 +2876,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114660000750891808
@@ -3097,22 +2915,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114660649544445310
@@ -3126,20 +2931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f7cf0c433b94af2908e93f987bba6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseData:
-    colonistManager:
-      colonists: []
-      idleColonists: []
-      colonySkills: []
-    resourceManager:
-      energy: 0
-      metal: 0
-    plots: []
-    buildings: []
-  bc: {fileID: 0}
-  rc: {fileID: 0}
-  builder: {fileID: 0}
-  cc: {fileID: 0}
+  baseController: {fileID: 0}
 --- !u!114 &114674450068429562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3174,22 +2966,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114734648067961442
@@ -3226,22 +3005,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114775098199392112
@@ -3278,22 +3044,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114782853561335118
@@ -3330,22 +3083,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114845797530268012
@@ -3382,22 +3122,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114871472571130594
@@ -3434,22 +3161,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114890556256232276
@@ -3486,22 +3200,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114915661728870300
@@ -3538,22 +3239,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114985524871952446
@@ -3590,22 +3278,9 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}
 --- !u!114 &114992194199368912
@@ -3642,21 +3317,8 @@ MonoBehaviour:
                 building:
                   buildingName: 
                   totalColonistCapacity: 10
-                  jobCategory: 0
               totalColonistCapacity: 10
-              jobCapacities: 00000000000000000000000000000000000000000000000000000000
-              jobCategory: 0
-              resourceGeneration: []
-              resourceCapacity: []
           totalColonistCapacity: 10
-          jobCapacities: 00000000000000000000000000000000000000000000000000000000
-          jobCategory: 0
-          resourceGeneration: []
-          resourceCapacity: []
       totalColonistCapacity: 10
-      jobCapacities: 00000000000000000000000000000000000000000000000000000000
-      jobCategory: 0
-      resourceGeneration: []
-      resourceCapacity: []
   building_obj: {fileID: 0}
   UIobject: {fileID: 0}

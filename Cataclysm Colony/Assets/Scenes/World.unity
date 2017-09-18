@@ -108,741 +108,28 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1030487553
-Prefab:
+--- !u!1 &403889852 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1790658321302710, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1630174955}
+--- !u!114 &403889854
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].upgrades.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].upgrades.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].upgrades.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 223486044421055290, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1611412567}
-    - target: {fileID: 1952440369844200, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114062954727315600, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: m_MatchWidthOrHeight
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].currentUpgrade.name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].currentUpgrade.upgradeDescription
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].currentUpgrade.name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].currentUpgrade.upgradeDescription
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].currentUpgrade.name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].currentUpgrade.upgradeDescription
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4351206169265052, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4351206169265052, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4351206169265052, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].name
-      value: Assault Rifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 7273ff044cce5bf4b8a2305f785065a6,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].itemDescription
-      value: Standard issue bad guy shooter
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].buildHours
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].optimalColonistCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].diminishingMultiplier
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].id
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].name
-      value: MediKit
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 61de0d852c97ed840b1925db5e43e064,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].itemDescription
-      value: Heal those cuts, bruises, and severed limbs.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].buildHours
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].optimalColonistCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].diminishingMultiplier
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].id
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].name
-      value: Combat Knife
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 246bee6321505984887606ee93e08e0f,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].itemDescription
-      value: Standard weapon for enemies who get in your personal space.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].buildHours
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].optimalColonistCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].diminishingMultiplier
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[3].id
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[3].name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[3].icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[3].itemDescription
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[3].buildHours
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[3].optimalColonistCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[3].diminishingMultiplier
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[4].id
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[4].name
-      value: Mounted Machine Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[4].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[4].itemDescription
-      value: A large machine gun that requires a mount location. Can be set up on
-        vehicles or towers.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[4].buildHours
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[4].optimalColonistCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[4].diminishingMultiplier
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[5].id
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[5].name
-      value: Mounted Machine Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[5].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[5].itemDescription
-      value: A large machine gun that requires a mount location. Can be set up on
-        vehicles or towers.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[5].buildHours
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[5].optimalColonistCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[5].diminishingMultiplier
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[6].id
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[6].name
-      value: Mounted Machine Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[6].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[6].itemDescription
-      value: A large machine gun that requires a mount location. Can be set up on
-        vehicles or towers.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[6].buildHours
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[6].optimalColonistCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[6].diminishingMultiplier
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[7].id
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[7].name
-      value: Mounted Machine Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[7].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[7].itemDescription
-      value: A large machine gun that requires a mount location. Can be set up on
-        vehicles or towers.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[7].buildHours
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[7].optimalColonistCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[7].diminishingMultiplier
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[8].id
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[8].name
-      value: Mounted Machine Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[8].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[8].itemDescription
-      value: A large machine gun that requires a mount location. Can be set up on
-        vehicles or towers.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[8].buildHours
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[8].optimalColonistCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[8].diminishingMultiplier
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[9].id
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[9].name
-      value: Mounted Machine Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[9].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[9].itemDescription
-      value: A large machine gun that requires a mount location. Can be set up on
-        vehicles or towers.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[9].buildHours
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[9].optimalColonistCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[9].diminishingMultiplier
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[10].id
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[10].name
-      value: Mounted Machine Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[10].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[10].itemDescription
-      value: A large machine gun that requires a mount location. Can be set up on
-        vehicles or towers.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[10].buildHours
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[10].optimalColonistCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[10].diminishingMultiplier
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[0].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 7273ff044cce5bf4b8a2305f785065a6,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[0].name
-      value: Laser Rifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[0].upgradeDescription
-      value: Laser deal higher damage. They are more effective against armor.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[0].buildHours
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[1].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[1].name
-      value: Plasma Rifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[1].upgradeDescription
-      value: Very high damage with fabulous green shots. More effective against shields.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[1].buildHours
-      value: 140
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[2].upgradedItemID
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[2].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 246bee6321505984887606ee93e08e0f,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[2].name
-      value: Katana
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[2].upgradeDescription
-      value: It's a knife. A really long badass knife.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[2].buildHours
-      value: 140
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[3].upgradedItemID
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[3].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: cab21a1d077484141a1c272b8d3f1d83,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[3].name
-      value: Recon X-9000 Goggles
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[3].upgradeDescription
-      value: See farther and collect target location data.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: itemUpgrades.Array.data[3].buildHours
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].upgrades.Array.data[0].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 7273ff044cce5bf4b8a2305f785065a6,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].upgrades.Array.data[0].name
-      value: Assault Rifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].upgrades.Array.data[0].upgradeDescription
-      value: Standard issue bad guy shooter
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].upgrades.Array.data[1].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].upgrades.Array.data[1].upgradedItemID
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].upgrades.Array.data[1].name
-      value: Laser Rifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].upgrades.Array.data[1].upgradeDescription
-      value: PEW PEW PEW!!!!!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[0].upgrades.Array.data[1].buildHours
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].upgrades.Array.data[0].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 61de0d852c97ed840b1925db5e43e064,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].upgrades.Array.data[0].name
-      value: MediKit
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].upgrades.Array.data[0].upgradeDescription
-      value: Heal those cuts, bruises, and severed limbs.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].upgrades.Array.data[1].upgradedItemID
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].upgrades.Array.data[1].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].upgrades.Array.data[1].name
-      value: Laser Rifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].upgrades.Array.data[1].upgradeDescription
-      value: PEW PEW PEW!!!!!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[1].upgrades.Array.data[1].buildHours
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].upgrades.Array.data[0].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 246bee6321505984887606ee93e08e0f,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].upgrades.Array.data[0].name
-      value: Combat Knife
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].upgrades.Array.data[0].upgradeDescription
-      value: Standard weapon for enemies who get in your personal space.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].upgrades.Array.data[1].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 246bee6321505984887606ee93e08e0f,
-        type: 3}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].upgrades.Array.data[1].name
-      value: Katana
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].upgrades.Array.data[1].upgradeDescription
-      value: It's a knife. A really long badass knife.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778708559375820, guid: 2d572a0793273e143bdc2c5cfa603b79,
-        type: 2}
-      propertyPath: items.Array.data[2].upgrades.Array.data[1].buildHours
-      value: 100
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 403889852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8b6f159ee30486ebc17996b6fa0583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1030326925 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114194530642677958, guid: 2d572a0793273e143bdc2c5cfa603b79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1630174955}
+  m_Script: {fileID: 11500000, guid: 0b7873cae6f5cc04896d6500b90f7fa0, type: 3}
 --- !u!1 &1611412563
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +231,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b93b9a0ca47894eb5f1bf97fb3722c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1630174955
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549338140902330, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223486044421055290, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1611412567}
+    - target: {fileID: 114430027289755136, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: mouseController
+      value: 
+      objectReference: {fileID: 1030326925}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1979346205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,7 +359,7 @@ GameObject:
   - component: {fileID: 2062769492}
   - component: {fileID: 2062769491}
   - component: {fileID: 2062769490}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

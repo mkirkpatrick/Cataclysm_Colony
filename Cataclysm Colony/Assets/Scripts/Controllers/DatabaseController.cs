@@ -18,7 +18,6 @@ public class DatabaseController : MonoBehaviour {
 
     }
 
-
     public Item GetItemByName(string name) {
         foreach (Item item in items)
         {
