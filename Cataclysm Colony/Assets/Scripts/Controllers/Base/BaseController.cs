@@ -18,9 +18,6 @@ public class BaseController : MonoBehaviour {
 
 	void Start () {
 
-
-        LinkControllers(); // Create controller scripts and attach building data to them
-
         //Create views and containers
         base_obj = Instantiate(basePrefab);
 
@@ -31,11 +28,6 @@ public class BaseController : MonoBehaviour {
 	void Update () {
    
     }
-
-    private void LinkControllers() {
-        factoryController.factoryData = baseData.buildings[1] as Factory;
-    }
-
 
 	public void ShowBase(GameObject baseObj){
 		

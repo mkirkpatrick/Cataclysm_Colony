@@ -56,6 +56,7 @@ public class CameraController : MonoBehaviour
 		}
 		else
 		{
+            /*
 			// Move camera if mouse pointer reaches screen borders
 			if (Input.mousePosition.x < ScrollArea)
 			{
@@ -75,7 +76,7 @@ public class CameraController : MonoBehaviour
 			if (Input.mousePosition.y > Screen.height - ScrollArea)
 			{
 				translation += Vector3.forward * ScrollSpeed * Time.deltaTime;
-			}
+			}*/
 		}
 
 		// Keep camera within level and zoom area

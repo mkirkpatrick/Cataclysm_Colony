@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlotController : MonoBehaviour {
 
-	public enum BaseTiers {Bunker, InnerPlot, InnerWall, OuterPlot, OuterWall}
+    public List<Plot_gameobj> plots;
 
 	// Use this for initialization
 	void Start () {
@@ -13,17 +13,17 @@ public class PlotController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log( GetBaseTier( GameController.Instance.mouseController.distanceFromOrigin ) );
+		
 	}
 
-	public BaseTiers GetBaseTier(float mouseDistance){
+	public Plot.PlotType GetPlotType(float mouseDistance){
 
 		if (mouseDistance < 30f)
-			return BaseTiers.Bunker;
+			return Plot.PlotType.Bunker;
 		else if (mouseDistance < 70f)
-			return BaseTiers.InnerPlot;
+			return Plot.PlotType.Tier1;
 		else
-			return BaseTiers.Bunker;
+			return Plot.PlotType.Bunker;
 	
 	}
 		
