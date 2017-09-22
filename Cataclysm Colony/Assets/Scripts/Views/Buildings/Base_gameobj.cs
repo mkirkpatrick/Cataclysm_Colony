@@ -6,6 +6,8 @@ public class Base_gameobj : MonoBehaviour {
 
     public BaseController baseController;
 
+	public Transform plotContainer;
+
 	void Start(){
         baseController = GameController.Instance.baseController;
 	}

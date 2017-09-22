@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaseUtil {
 
-    public static GameObject GetPlotObject(Plot plot, GameObject baseObj) {
+    /*public static GameObject GetPlotObject(Plot plot, GameObject baseObj) {
 
         GameObject plotObj = baseObj.transform.Find("Plots").gameObject;
         GameObject groupObj;
@@ -30,4 +30,5 @@ public class BaseUtil {
         }
 
     }
+*/
 }

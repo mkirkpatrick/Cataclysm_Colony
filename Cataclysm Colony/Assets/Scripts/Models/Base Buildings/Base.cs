@@ -25,6 +25,7 @@ public class Base {
         buildings = new List<Building>();
 		AddBuilding( new Bunker(), plots[0] );
         AddBuilding( new Factory(), plots[1] );
+		AddBuilding( new Laboratory(), plots[4] );
 
     }
 
@@ -53,5 +54,9 @@ public class Base {
         {
             plots.Add(new Plot(Plot.PlotType.Tier2Wall, i));
         }
+
+		for (int i = 0; i < plots.Count; i++) {
+			plots[i].plotId = i;
+		}
     }
 }

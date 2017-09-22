@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43668923, g: 0.48428386, b: 0.56452703, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plots: []
+  plotPrefab: {fileID: 1466910031796214, guid: c1470417354b34929af77290b22bbc29, type: 2}
 --- !u!114 &1030326925 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114194530642677958, guid: 2d572a0793273e143bdc2c5cfa603b79,
@@ -281,6 +282,17 @@ Prefab:
       propertyPath: mouseController
       value: 
       objectReference: {fileID: 1030326925}
+    - target: {fileID: 114523273494093334, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: basePrefab
+      value: 
+      objectReference: {fileID: 1485594073358522, guid: 56c4e20b64d38b2408866fc9baf8ea07,
+        type: 2}
+    - target: {fileID: 114523273494093334, guid: 2d572a0793273e143bdc2c5cfa603b79,
+        type: 2}
+      propertyPath: plotController
+      value: 
+      objectReference: {fileID: 403889854}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d572a0793273e143bdc2c5cfa603b79, type: 2}
   m_IsPrefabParent: 0
@@ -349,76 +361,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1001 &2030665085
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 422170, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422170, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 31.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 422170, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 30.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 422170, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 422170, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422170, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422170, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 422170, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 422170, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 11939280, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 2100000, guid: 32028c06265c1c043bf876f8a3620ce7, type: 2}
-    - target: {fileID: 11939280, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_OrthographicSize
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 11939280, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_FarClipPlane
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 11939280, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_IgnoreLayers.m_Bits
-      value: 4294966783
-      objectReference: {fileID: 0}
-    - target: {fileID: 11939280, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_AspectRatio
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11939280, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-      propertyPath: m_Orthographic
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6af1633065cf34e24bba4e37bf8663b3, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2062769489
 GameObject:
   m_ObjectHideFlags: 0

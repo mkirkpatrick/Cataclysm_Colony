@@ -25,7 +25,6 @@ public class GameController : MonoBehaviour {
 		}
 		else Destroy(this.gameObject);
 
-        psc = GetComponent<PlayerStatusController>();
 
 	}
 

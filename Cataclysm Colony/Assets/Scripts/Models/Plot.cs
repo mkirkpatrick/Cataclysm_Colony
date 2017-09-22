@@ -7,6 +7,7 @@ public class Plot {
 
     public enum PlotType { Bunker, Tier1, Tier1Wall, Tier2, Tier2Wall, Wilderness}
 
+	public int plotId;
     public PlotType plotType;
     public int plotNum;
     public Building building;

@@ -16,6 +16,10 @@ public class Building {
     public Building() {
         totalColonistCapacity = 100;
     }
+	public Building(string name){
+		totalColonistCapacity = 100;
+		buildingName = name;
+	}
 
     public void AllocateColonist(Colonist col) {
 
