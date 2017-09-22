@@ -10,6 +10,7 @@ public class BaseController : MonoBehaviour {
     //Prefabs
     public GameObject basePrefab;
 
+	public PlotController plotController;
     public FactoryController factoryController;
 
 	void Awake(){
@@ -18,12 +19,9 @@ public class BaseController : MonoBehaviour {
 
 	void Start () {
 
-
-        LinkControllers(); // Create controller scripts and attach building data to them
-
         //Create views and containers
         base_obj = Instantiate(basePrefab);
-
+		plotController.CreatePlotObjects ();
         ShowBase( base_obj );
 	}
 	
@@ -31,11 +29,6 @@ public class BaseController : MonoBehaviour {
 	void Update () {
    
     }
-
-    private void LinkControllers() {
-        factoryController.factoryData = baseData.buildings[1] as Factory;
-    }
-
 
 	public void ShowBase(GameObject baseObj){
 		
@@ -50,8 +43,10 @@ public class BaseController : MonoBehaviour {
         GameObject build_obj = Instantiate (prefab, parent.transform);
         build_obj.GetComponent<Building_gameobj>().buildingData = building;
 
-        GameObject plotParent = BaseUtil.GetPlotObject(building.plot, base_obj);
-        plotParent.GetComponent<Plot_gameobj>().building_obj = build_obj.GetComponent<Building_gameobj>();
-        build_obj.transform.position = plotParent.transform.position;
+		Plot_gameobj plotParent = plotController.plots[building.plot.plotId];
+
+		plotParent.building_obj = build_obj.GetComponent<Building_gameobj>();
+		build_obj.transform.position = plotParent.transform.position;
+		build_obj.transform.eulerAngles = plotParent.transform.eulerAngles;
     }
 }

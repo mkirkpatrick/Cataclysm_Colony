@@ -184,7 +184,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1146976352266734
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -638,6 +638,22 @@ GameObject:
   - component: {fileID: 114439120933782200}
   m_Layer: 5
   m_Name: Start Build Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1515382482973758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4313373318120940}
+  - component: {fileID: 114194530642677958}
+  m_Layer: 0
+  m_Name: MouseController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1152,6 +1168,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1790658321302710
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4119321516952624}
+  m_Layer: 0
+  m_Name: Plot Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1821403957718604
 GameObject:
   m_ObjectHideFlags: 1
@@ -1342,7 +1373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1956069731586324
 GameObject:
   m_ObjectHideFlags: 1
@@ -1444,7 +1475,20 @@ Transform:
   - {fileID: 224110683990390650}
   - {fileID: 224688482362269746}
   m_Father: {fileID: 4549338140902330}
-  m_RootOrder: 5
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4119321516952624
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790658321302710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4534912198798448}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4164821633919740
 Transform:
@@ -1457,7 +1501,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4549338140902330}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4182703955667454
 Transform:
@@ -1470,7 +1514,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4549338140902330}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4225463555052194
 Transform:
@@ -1478,12 +1522,25 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1146976352266734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4534912198798448}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4313373318120940
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515382482973758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4549338140902330}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4351206169265052
 Transform:
@@ -1492,11 +1549,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1648127830807904}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 284.70755, y: 507.4199, z: -11.005859}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4549338140902330}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4534912198798448
 Transform:
@@ -1509,6 +1566,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4664170620778780}
+  - {fileID: 4225463555052194}
+  - {fileID: 4119321516952624}
   m_Father: {fileID: 4549338140902330}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1523,12 +1582,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4534912198798448}
-  - {fileID: 4225463555052194}
   - {fileID: 4351206169265052}
   - {fileID: 4164821633919740}
   - {fileID: 4182703955667454}
   - {fileID: 4013622145767706}
   - {fileID: 4911507799681132}
+  - {fileID: 4313373318120940}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1569,7 +1628,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4549338140902330}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114037363474657536
 MonoBehaviour:
@@ -1663,7 +1722,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2101,6 +2160,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114194530642677958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515382482973758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7873cae6f5cc04896d6500b90f7fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  distanceFromOrigin: 0
 --- !u!114 &114212055861427442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2941,14 +3015,10 @@ MonoBehaviour:
         optimalColonistCount: 0
         diminishingMultiplier: 0
         requiredResearch: 
-        currentUpgrade:
-          upgradedItemID: 0
-          icon: {fileID: 0}
-          name: Laser Rifle
-          upgradeDescription: 
-          buildHours: 0
-          requiredResearch: 
+        currentUpgrade: 0
+        upgrades: []
       itemBuildAmount: 0
+      itemsBuiltSoFar: 0
       hoursContributed: 0
     selectedItem:
       id: 0
@@ -2960,20 +3030,9 @@ MonoBehaviour:
       optimalColonistCount: 0
       diminishingMultiplier: 0
       requiredResearch: 
-      currentUpgrade:
-        upgradedItemID: 0
-        icon: {fileID: 0}
-        name: Laser Rifle
-        upgradeDescription: 
-        buildHours: 0
-        requiredResearch: 
-    selectedUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: Laser Rifle
-      upgradeDescription: 
-      buildHours: 0
-      requiredResearch: 
+      currentUpgrade: 0
+      upgrades: []
+    selectedUpgrade: 0
     currentInventoryCount: 0
     buildCount: 0
     colonistAssignedCount: 0
@@ -4040,215 +4099,67 @@ MonoBehaviour:
   - id: 0
     name: Assault Rifle
     icon: {fileID: 21300000, guid: 7273ff044cce5bf4b8a2305f785065a6, type: 3}
-    itemDescription: Standard rifle for shooting the bad guys.
+    itemDescription: Standard issue bad guy shooter
     health: 0
-    buildHours: 60
+    buildHours: 100
     optimalColonistCount: 2
     diminishingMultiplier: 0.2
     requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
+    currentUpgrade: 0
+    upgrades:
+    - upgradedItemID: 0
+      icon: {fileID: 21300000, guid: 7273ff044cce5bf4b8a2305f785065a6, type: 3}
+      name: Assault Rifle
+      upgradeDescription: Standard issue bad guy shooter
       buildHours: 0
       requiredResearch: 
-  - id: 1
+    - upgradedItemID: 1
+      icon: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc, type: 3}
+      name: Laser Rifle
+      upgradeDescription: PEW PEW PEW!!!!!
+      buildHours: 100
+      requiredResearch: 
+  - id: 0
+    name: MediKit
+    icon: {fileID: 21300000, guid: 61de0d852c97ed840b1925db5e43e064, type: 3}
+    itemDescription: Heal those cuts, bruises, and severed limbs.
+    health: 0
+    buildHours: 8
+    optimalColonistCount: 1
+    diminishingMultiplier: 0.2
+    requiredResearch: 
+    currentUpgrade: 0
+    upgrades:
+    - upgradedItemID: 0
+      icon: {fileID: 21300000, guid: 61de0d852c97ed840b1925db5e43e064, type: 3}
+      name: MediKit
+      upgradeDescription: Heal those cuts, bruises, and severed limbs.
+      buildHours: 0
+      requiredResearch: 
+  - id: 0
     name: Combat Knife
     icon: {fileID: 21300000, guid: 246bee6321505984887606ee93e08e0f, type: 3}
-    itemDescription: Really big knife for fighting when things get inside your personal
-      space. Unlimited ammo.
+    itemDescription: Standard weapon for enemies who get in your personal space.
     health: 0
-    buildHours: 30
-    optimalColonistCount: 2
+    buildHours: 25
+    optimalColonistCount: 1
     diminishingMultiplier: 0.2
     requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
+    currentUpgrade: 0
+    upgrades:
+    - upgradedItemID: 0
+      icon: {fileID: 21300000, guid: 246bee6321505984887606ee93e08e0f, type: 3}
+      name: Combat Knife
+      upgradeDescription: Standard weapon for enemies who get in your personal space.
       buildHours: 0
       requiredResearch: 
-  - id: 2
-    name: Tactical Binoculars
-    icon: {fileID: 21300000, guid: cab21a1d077484141a1c272b8d3f1d83, type: 3}
-    itemDescription: These binoculars allow colonists to obtain scouting information
-      from greater distances. Do not look at the sun.
-    health: 0
-    buildHours: 50
-    optimalColonistCount: 2
-    diminishingMultiplier: 0.4
-    requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
-      buildHours: 0
+    - upgradedItemID: 0
+      icon: {fileID: 21300000, guid: 246bee6321505984887606ee93e08e0f, type: 3}
+      name: Katana
+      upgradeDescription: It's a knife. A really long badass knife.
+      buildHours: 100
       requiredResearch: 
-  - id: 3
-    name: Radio Pack
-    icon: {fileID: 21300000, guid: 61de0d852c97ed840b1925db5e43e064, type: 3}
-    itemDescription: Standard radio equipment for reporting back to base.
-    health: 0
-    buildHours: 120
-    optimalColonistCount: 3
-    diminishingMultiplier: 0.4
-    requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
-      buildHours: 0
-      requiredResearch: 
-  - id: 4
-    name: Mounted Machine Gun
-    icon: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc, type: 3}
-    itemDescription: A large machine gun that requires a mount location. Can be set
-      up on vehicles or towers.
-    health: 0
-    buildHours: 300
-    optimalColonistCount: 4
-    diminishingMultiplier: 0.65
-    requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
-      buildHours: 0
-      requiredResearch: 
-  - id: 4
-    name: Mounted Machine Gun
-    icon: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc, type: 3}
-    itemDescription: A large machine gun that requires a mount location. Can be set
-      up on vehicles or towers.
-    health: 0
-    buildHours: 300
-    optimalColonistCount: 4
-    diminishingMultiplier: 0.65
-    requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
-      buildHours: 0
-      requiredResearch: 
-  - id: 4
-    name: Mounted Machine Gun
-    icon: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc, type: 3}
-    itemDescription: A large machine gun that requires a mount location. Can be set
-      up on vehicles or towers.
-    health: 0
-    buildHours: 300
-    optimalColonistCount: 4
-    diminishingMultiplier: 0.65
-    requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
-      buildHours: 0
-      requiredResearch: 
-  - id: 4
-    name: Mounted Machine Gun
-    icon: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc, type: 3}
-    itemDescription: A large machine gun that requires a mount location. Can be set
-      up on vehicles or towers.
-    health: 0
-    buildHours: 300
-    optimalColonistCount: 4
-    diminishingMultiplier: 0.65
-    requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
-      buildHours: 0
-      requiredResearch: 
-  - id: 4
-    name: Mounted Machine Gun
-    icon: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc, type: 3}
-    itemDescription: A large machine gun that requires a mount location. Can be set
-      up on vehicles or towers.
-    health: 0
-    buildHours: 300
-    optimalColonistCount: 4
-    diminishingMultiplier: 0.65
-    requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
-      buildHours: 0
-      requiredResearch: 
-  - id: 4
-    name: Mounted Machine Gun
-    icon: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc, type: 3}
-    itemDescription: A large machine gun that requires a mount location. Can be set
-      up on vehicles or towers.
-    health: 0
-    buildHours: 300
-    optimalColonistCount: 4
-    diminishingMultiplier: 0.65
-    requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
-      buildHours: 0
-      requiredResearch: 
-  - id: 4
-    name: Mounted Machine Gun
-    icon: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc, type: 3}
-    itemDescription: A large machine gun that requires a mount location. Can be set
-      up on vehicles or towers.
-    health: 0
-    buildHours: 300
-    optimalColonistCount: 4
-    diminishingMultiplier: 0.65
-    requiredResearch: 
-    currentUpgrade:
-      upgradedItemID: 0
-      icon: {fileID: 0}
-      name: 
-      upgradeDescription: 
-      buildHours: 0
-      requiredResearch: 
-  itemUpgrades:
-  - upgradedItemID: 0
-    icon: {fileID: 21300000, guid: 7273ff044cce5bf4b8a2305f785065a6, type: 3}
-    name: Laser Rifle
-    upgradeDescription: Laser deal higher damage. They are more effective against
-      armor.
-    buildHours: 80
-    requiredResearch: 
-  - upgradedItemID: 0
-    icon: {fileID: 21300000, guid: a77f95ce14f83494baf0cf62413b92bc, type: 3}
-    name: Plasma Rifle
-    upgradeDescription: Very high damage with fabulous green shots. More effective
-      against shields.
-    buildHours: 140
-    requiredResearch: 
-  - upgradedItemID: 1
-    icon: {fileID: 21300000, guid: 246bee6321505984887606ee93e08e0f, type: 3}
-    name: Katana
-    upgradeDescription: It's a knife. A really long badass knife.
-    buildHours: 140
-    requiredResearch: 
-  - upgradedItemID: 2
-    icon: {fileID: 21300000, guid: cab21a1d077484141a1c272b8d3f1d83, type: 3}
-    name: Recon X-9000 Goggles
-    upgradeDescription: See farther and collect target location data.
-    buildHours: 80
-    requiredResearch: 
+  itemUpgrades: []
 --- !u!114 &114779309361516010
 MonoBehaviour:
   m_ObjectHideFlags: 1

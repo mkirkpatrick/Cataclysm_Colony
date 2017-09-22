@@ -11,6 +11,12 @@ public class Plot_gameobj : MonoBehaviour {
     public Building_gameobj building_obj;
 
     public GameObject UIobject;
+	public Plot_gameobj (){
+		plotData = new Plot (Plot.PlotType.Bunker, 0);
+	}
+	public Plot_gameobj (Plot pData){
+		plotData = pData;
+	}
 
     void Start()
     {

@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour {
     public BaseController baseController;
     public ColonistController colonistController;
 	public InventoryController inventoryController;
+	public MouseController mouseController;
 
 
     void Awake(){
@@ -24,7 +25,6 @@ public class GameController : MonoBehaviour {
 		}
 		else Destroy(this.gameObject);
 
-        psc = GetComponent<PlayerStatusController>();
 
 	}
 

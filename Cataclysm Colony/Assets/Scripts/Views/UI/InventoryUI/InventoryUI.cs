@@ -36,7 +36,6 @@ public class InventoryUI : MonoBehaviour {
 		ResetInventory ();
 
 		itemCounts = new Dictionary<string,int>();
-		Debug.Log (inventoryController.totalItems.Count);
 
 		foreach(Item item in inventoryController.totalItems){
 			if (itemCounts.ContainsKey(item.name)){

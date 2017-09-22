@@ -20,10 +20,11 @@ public class Item {
 
     public int[] requiredResearch;
 
-    public ItemUpgrade currentUpgrade;
+    public int currentUpgrade;
+	public List<ItemUpgrade> upgrades;
 
 	public Item(){
-		currentUpgrade = new ItemUpgrade ();
+		currentUpgrade = 0;
 	}
 
 }
@@ -42,7 +43,6 @@ public class ItemUpgrade {
 
 	public ItemUpgrade(){
 		name = "";
-		icon = new Sprite ();
 		upgradeDescription = "";
 		buildHours = 0f;
 	}

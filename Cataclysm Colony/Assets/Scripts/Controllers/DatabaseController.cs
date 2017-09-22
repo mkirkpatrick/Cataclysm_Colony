@@ -18,8 +18,6 @@ public class DatabaseController : MonoBehaviour {
 
     }
 
-
-
     public Item GetItemByName(string name) {
         foreach (Item item in items)
         {
@@ -47,12 +45,6 @@ public class DatabaseController : MonoBehaviour {
 		newItem.icon = item.icon;
 		newItem.itemDescription = item.itemDescription;
 		newItem.health = item.health;
-
-		if (newItem.currentUpgrade != null) {
-			newItem.currentUpgrade.name = item.currentUpgrade.name;
-			newItem.currentUpgrade.icon = item.currentUpgrade.icon;
-			newItem.currentUpgrade.upgradeDescription = item.currentUpgrade.upgradeDescription;
-		}
 			
 		return newItem;
 	}
