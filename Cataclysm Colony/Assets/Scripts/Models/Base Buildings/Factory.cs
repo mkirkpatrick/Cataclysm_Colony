@@ -9,10 +9,11 @@ public class Factory : Building {
 	public List<Item> inventory;
 
     public Factory() {
-        this.buildingName = "Factory";
-        this.totalColonistCapacity = 100;
-        this.allocatedColonists = new List<Colonist>();
-        this.currentBuildTasks = new List<FactoryBuildTask>();
+        buildingName = "Factory";
+		totalConstructionHours = 600;
+        totalColonistCapacity = 100;
+        allocatedColonists = new List<Colonist>();
+        currentBuildTasks = new List<FactoryBuildTask>();
     }
 
 }

@@ -95,6 +95,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1060021659696370
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4846916881121556}
+  - component: {fileID: 114840983926781970}
+  m_Layer: 0
+  m_Name: Construction Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1083160860388430
 GameObject:
   m_ObjectHideFlags: 1
@@ -1176,6 +1192,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4119321516952624}
+  - component: {fileID: 114085132828993890}
   m_Layer: 0
   m_Name: Plot Controller
   m_TagString: Untagged
@@ -1568,6 +1585,7 @@ Transform:
   - {fileID: 4664170620778780}
   - {fileID: 4225463555052194}
   - {fileID: 4119321516952624}
+  - {fileID: 4846916881121556}
   m_Father: {fileID: 4549338140902330}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1616,6 +1634,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4534912198798448}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4846916881121556
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060021659696370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4534912198798448}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4911507799681132
 Transform:
@@ -1766,6 +1797,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!114 &114085132828993890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790658321302710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8b6f159ee30486ebc17996b6fa0583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plots: []
+  plotPrefab: {fileID: 1466910031796214, guid: c1470417354b34929af77290b22bbc29, type: 2}
 --- !u!114 &114086959564582408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2175,6 +2219,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   distanceFromOrigin: 0
+  mouseAngle: 0
 --- !u!114 &114212055861427442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2877,6 +2922,7 @@ MonoBehaviour:
   baseController: {fileID: 114523273494093334}
   colonistController: {fileID: 114898658535952478}
   inventoryController: {fileID: 114401808215260828}
+  mouseController: {fileID: 114194530642677958}
 --- !u!114 &114439120933782200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3237,7 +3283,8 @@ MonoBehaviour:
     plots: []
     buildings: []
   base_obj: {fileID: 0}
-  basePrefab: {fileID: 1773448870267368, guid: 56c4e20b64d38b2408866fc9baf8ea07, type: 2}
+  basePrefab: {fileID: 1485594073358522, guid: 56c4e20b64d38b2408866fc9baf8ea07, type: 2}
+  plotController: {fileID: 114085132828993890}
   factoryController: {fileID: 114635514143081880}
 --- !u!114 &114538521985439180
 MonoBehaviour:
@@ -3562,29 +3609,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoryData:
+    currentStatus: 0
     buildingName: Factory
+    totalColonistCapacity: 100
+    contructionProgress: 0
     plot:
+      plotId: 0
       plotType: 0
       plotNum: 0
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    totalColonistCapacity: 100
     currentBuildTasks: []
     inventory: []
 --- !u!114 &114665606992951830
@@ -4339,6 +4398,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114840983926781970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060021659696370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872d3514ae11a46ca8a2c50e7c9fb9c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114857183773424764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4491,547 +4561,819 @@ MonoBehaviour:
     colonists: []
     idleColonists: []
     plots:
-    - plotType: 0
+    - plotId: 0
+      plotType: 0
       plotNum: 0
       building:
+        currentStatus: 0
         buildingName: Bunker
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: Bunker
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: Bunker
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 1
+    - plotId: 1
+      plotType: 1
       plotNum: 1
       building:
+        currentStatus: 0
         buildingName: Factory
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 1
           plotType: 1
           plotNum: 1
           building:
+            currentStatus: 0
             buildingName: Factory
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 1
               plotType: 1
               plotNum: 1
               building:
+                currentStatus: 0
                 buildingName: Factory
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 1
                   plotType: 1
                   plotNum: 1
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 1
+    - plotId: 2
+      plotType: 1
       plotNum: 2
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 1
+    - plotId: 3
+      plotType: 1
       plotNum: 3
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 1
-      plotNum: 4
+    - plotId: 0
+      plotType: 0
+      plotNum: 0
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 2
+    - plotId: 5
+      plotType: 2
       plotNum: 1
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 2
+    - plotId: 6
+      plotType: 2
       plotNum: 2
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 2
+    - plotId: 7
+      plotType: 2
       plotNum: 3
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 2
+    - plotId: 8
+      plotType: 2
       plotNum: 4
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 9
+      plotType: 3
       plotNum: 1
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 10
+      plotType: 3
       plotNum: 2
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 11
+      plotType: 3
       plotNum: 3
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 12
+      plotType: 3
       plotNum: 4
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 13
+      plotType: 3
       plotNum: 5
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 14
+      plotType: 3
       plotNum: 6
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 15
+      plotType: 3
       plotNum: 7
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 16
+      plotType: 3
       plotNum: 8
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 17
+      plotType: 3
       plotNum: 9
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 18
+      plotType: 3
       plotNum: 10
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 19
+      plotType: 3
       plotNum: 11
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 3
+    - plotId: 20
+      plotType: 3
       plotNum: 12
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 4
+    - plotId: 21
+      plotType: 4
       plotNum: 1
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 4
+    - plotId: 22
+      plotType: 4
       plotNum: 2
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 4
+    - plotId: 23
+      plotType: 4
       plotNum: 3
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    - plotType: 4
+    - plotId: 24
+      plotType: 4
       plotNum: 4
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        contructionProgress: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            contructionProgress: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                contructionProgress: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
     buildings:
-    - buildingName: Bunker
+    - currentStatus: 0
+      buildingName: Bunker
+      totalColonistCapacity: 100
+      contructionProgress: 0
       plot:
+        plotId: 0
         plotType: 0
         plotNum: 0
         building:
+          currentStatus: 0
           buildingName: Bunker
+          totalColonistCapacity: 100
+          contructionProgress: 0
           plot:
+            plotId: 0
             plotType: 0
             plotNum: 0
             building:
+              currentStatus: 0
               buildingName: Bunker
+              totalColonistCapacity: 100
+              contructionProgress: 0
               plot:
+                plotId: 0
                 plotType: 0
                 plotNum: 0
                 building:
+                  currentStatus: 0
                   buildingName: Bunker
                   totalColonistCapacity: 100
-              totalColonistCapacity: 100
-          totalColonistCapacity: 100
+                  contructionProgress: 0
+    - currentStatus: 0
+      buildingName: Factory
       totalColonistCapacity: 100
-    - buildingName: Factory
+      contructionProgress: 0
       plot:
+        plotId: 1
         plotType: 1
         plotNum: 1
         building:
+          currentStatus: 0
           buildingName: Factory
+          totalColonistCapacity: 100
+          contructionProgress: 0
           plot:
+            plotId: 1
             plotType: 1
             plotNum: 1
             building:
+              currentStatus: 0
               buildingName: Factory
+              totalColonistCapacity: 100
+              contructionProgress: 0
               plot:
+                plotId: 1
                 plotType: 1
                 plotNum: 1
                 building:
+                  currentStatus: 0
                   buildingName: Factory
                   totalColonistCapacity: 100
-              totalColonistCapacity: 100
-          totalColonistCapacity: 100
-      totalColonistCapacity: 100
+                  contructionProgress: 0
 --- !u!114 &114918159719010570
 MonoBehaviour:
   m_ObjectHideFlags: 1

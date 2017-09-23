@@ -9,10 +9,11 @@ public class Laboratory : Building {
 	public List<Item> inventory;
 
 	public Laboratory() {
-		this.buildingName = "Laboratory";
-		this.totalColonistCapacity = 100;
-		this.allocatedColonists = new List<Colonist>();
-		this.currentBuildTasks = new List<FactoryBuildTask>();
+		buildingName = "Laboratory";
+		totalConstructionHours = 600;
+		totalColonistCapacity = 100;
+		allocatedColonists = new List<Colonist>();
+		currentBuildTasks = new List<FactoryBuildTask>();
 	}
 
 }
