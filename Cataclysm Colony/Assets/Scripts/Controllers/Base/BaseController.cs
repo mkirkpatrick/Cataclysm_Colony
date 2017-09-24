@@ -10,6 +10,7 @@ public class BaseController : MonoBehaviour {
     //Prefabs
     public GameObject basePrefab;
 
+	public ConstructionController constructionController;
 	public PlotController plotController;
     public FactoryController factoryController;
 
@@ -23,7 +24,12 @@ public class BaseController : MonoBehaviour {
         base_obj = Instantiate(basePrefab);
 		plotController.CreatePlotObjects ();
         ShowBase( base_obj );
-	}
+
+        ConstructionTask newTask = new ConstructionTask(baseData.buildings[1]);
+        GameController.Instance.colonistController.AllocateColonistsToTask(newTask, 40);
+        constructionController.constructionTaskList.Add(newTask);
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -49,4 +55,12 @@ public class BaseController : MonoBehaviour {
 		build_obj.transform.position = plotParent.transform.position;
 		build_obj.transform.eulerAngles = plotParent.transform.eulerAngles;
     }
+
+	public void AllocateColonistsToBuilding(Building building, int count){
+		for (int i = 0; i < count; i++)
+		{
+			Colonist idleColonist = GameController.Instance.colonistController.GetIdleColonist();
+			building.allocatedColonists.Add (idleColonist);
+		}
+	}
 }

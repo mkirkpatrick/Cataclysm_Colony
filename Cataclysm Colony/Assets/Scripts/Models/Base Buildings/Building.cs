@@ -5,21 +5,24 @@ using UnityEngine;
 [ System.Serializable ]
 public class Building {
 
-	public string buildingName;
-    public Plot plot;
+	public enum BuildingStatus{ UnderConstruction, Ready, Incapacitated} 
+	public BuildingStatus currentStatus;
 
-    public int totalColonistCapacity;
+	public string buildingName;
+	public int totalColonistCapacity;
+
+	public int totalConstructionHours;
+
+	public Plot plot;
+    
 
     [System.NonSerialized]
     public List<Colonist> allocatedColonists;
 
     public Building() {
         totalColonistCapacity = 100;
+		currentStatus = BuildingStatus.UnderConstruction;
     }
-	public Building(string name){
-		totalColonistCapacity = 100;
-		buildingName = name;
-	}
 
     public void AllocateColonist(Colonist col) {
 

@@ -17,10 +17,7 @@ public class FactoryController : MonoBehaviour {
         FactoryBuildTask newFactoryTask = new FactoryBuildTask(taskData);
 
         newFactoryTask.allocatedColonists = new List<Colonist>();
-        for (int i = 0; i < taskData.colonistAssignedCount; i++) {
-            Colonist idleColonist = GameController.Instance.colonistController.GetIdleColonist();
-            GameController.Instance.colonistController.AllocateColonistToTask(idleColonist, newFactoryTask);
-        }
+        GameController.Instance.colonistController.AllocateColonistsToTask(newFactoryTask, taskData.colonistAssignedCount);
 
         factoryData.currentBuildTasks.Add(newFactoryTask);
     }
@@ -28,11 +25,7 @@ public class FactoryController : MonoBehaviour {
     {
         FactoryBuildTask newFactoryTask = new FactoryBuildTask(item, amountToBuild);
 
-        for (int i = 0; i < colonistsAssigned; i++)
-        {
-            Colonist idleColonist = GameController.Instance.colonistController.GetIdleColonist();
-            GameController.Instance.colonistController.AllocateColonistToTask(idleColonist, newFactoryTask);
-        }
+        GameController.Instance.colonistController.AllocateColonistsToTask(newFactoryTask, colonistsAssigned);
 
         factoryData.currentBuildTasks.Add(newFactoryTask);
     }
@@ -71,7 +64,7 @@ public class FactoryController : MonoBehaviour {
 		Item newItem = DatabaseController.Instance.GetItemByName (item.name);
 		GameController.Instance.inventoryController.totalItems.Add (newItem);
 		GameController.Instance.inventoryController.availableItems.Add (newItem);
-		if (UIController.Instance.inventoryUI.enabled == true)
+		if (UIController.Instance.inventoryUI.gameObject.activeSelf == true)
 			UIController.Instance.inventoryUI.UpdateItems ();
 	}
 }

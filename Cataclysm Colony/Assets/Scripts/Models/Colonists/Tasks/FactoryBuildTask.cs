@@ -26,9 +26,7 @@ public class FactoryBuildTask : Task {
 	public float GetHoursRemaining(){
 
 		float totalHours = buildItem.buildHours * itemBuildAmount;
-
-		if (buildItem.currentUpgrade != null)
-			totalHours += (buildItem.upgrades[buildItem.currentUpgrade].buildHours * itemBuildAmount);
+		totalHours += (buildItem.upgrades[buildItem.currentUpgrade].buildHours * itemBuildAmount);
 
 		return (totalHours - hoursContributed) / allocatedColonists.Count;
 	}
