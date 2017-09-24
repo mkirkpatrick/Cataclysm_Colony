@@ -10,12 +10,14 @@ public class Colonist {
 
     //[System.NonSerialized]
     public Building assignedBuilding;
-    public Task assignedTask;
+    public List<Task> assignedTasks;
 
 
     public Colonist() {
         health = 100f;
         oxygenLevel = 100f;
         hunger = 100f;
+
+        assignedTasks = new List<Task>();
     }
 }

@@ -25,9 +25,11 @@ public class BaseController : MonoBehaviour {
 		plotController.CreatePlotObjects ();
         ShowBase( base_obj );
 
-		constructionController.constructionList.Add( baseData.buildings[1] );
-		AllocateColonistsToBuilding (baseData.buildings [1], 40);
-	}
+        ConstructionTask newTask = new ConstructionTask(baseData.buildings[1]);
+        GameController.Instance.colonistController.AllocateColonistsToTask(newTask, 40);
+        constructionController.constructionTaskList.Add(newTask);
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

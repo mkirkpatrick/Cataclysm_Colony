@@ -58,14 +58,20 @@ public class ColonistController : MonoBehaviour {
 
 	}
 
-	public void AllocateColonistToTask(Colonist colonist, Task task)
+    //Tasks
+    //Allocate to new task removing any currently in queue
+	public void AllocateColonistsToTask(Task task, int colonistCount)
 	{
-		//Remove from old task first
-		if (colonist.assignedTask != null)
-			colonist.assignedTask.allocatedColonists.Remove(colonist);
-
-        task.allocatedColonists.Add(colonist);
-		colonist.assignedTask = task;
+        for (int i = 0; i < colonistCount; i++) {
+            Colonist newColonist = GetIdleColonist();
+            task.allocatedColonists.Add(newColonist);
+            newColonist.assignedTasks.Add(task);
+        }
 
 	}
+    //Add a task on the queue
+    public void AddTaskToQueue(Colonist colonist, Task task) {
+        task.allocatedColonists.Add(colonist);
+        colonist.assignedTasks.Add(task);
+    }
 }
