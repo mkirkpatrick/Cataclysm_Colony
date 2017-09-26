@@ -9,6 +9,10 @@ public class BuildingUI_gameobj : MonoBehaviour {
 
 	public Text allocatedColonists;
 
+    void Update() {
+        
+    }
+
 	void OnEnable(){
 		UpdateUI ();
 	}

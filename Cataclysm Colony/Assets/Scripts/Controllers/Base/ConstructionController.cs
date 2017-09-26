@@ -17,7 +17,7 @@ public class ConstructionController : MonoBehaviour {
 	public void UpdateConstruction(){
 		foreach (ConstructionTask constructionTask in constructionTaskList) {
             constructionTask.hoursContributed += constructionTask.allocatedColonists.Count * Time.deltaTime / 60f;
-
+            constructionTask.building.constructedProgress = constructionTask.hoursContributed;
             //Check for completion
             if (constructionTask.hoursContributed >= constructionTask.totalHours)
                 CompleteConstructionTask(constructionTask);
@@ -27,5 +27,6 @@ public class ConstructionController : MonoBehaviour {
         foreach (Colonist colonist in task.allocatedColonists) {
             GameController.Instance.colonistController.SetIdleColonist(colonist);
         }
+        constructionTaskList.Remove(task);
     }
 }
