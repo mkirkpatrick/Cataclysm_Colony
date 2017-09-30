@@ -11,6 +11,7 @@ public class Building {
 	public string buildingName;
 	public int totalColonistCapacity;
 
+    public float constructedProgress;
 	public int totalConstructionHours;
 
 	public Plot plot;

@@ -11,7 +11,8 @@ public class Laboratory : Building {
 	public Laboratory() {
 		buildingName = "Laboratory";
 		totalConstructionHours = 600;
-		totalColonistCapacity = 100;
+        constructedProgress = totalConstructionHours;
+        totalColonistCapacity = 100;
 		allocatedColonists = new List<Colonist>();
 		currentBuildTasks = new List<FactoryBuildTask>();
 	}
