@@ -15,18 +15,19 @@ public class ConstructionController : MonoBehaviour {
 	}
 
 	public void UpdateConstruction(){
-		foreach (ConstructionTask constructionTask in constructionTaskList) {
-            constructionTask.hoursContributed += constructionTask.allocatedColonists.Count * Time.deltaTime / 60f;
-            constructionTask.building.constructedProgress = constructionTask.hoursContributed;
+		for (int i = 0; i < constructionTaskList.Count; i++) {
+            constructionTaskList[i].hoursContributed += constructionTaskList[i].allocatedColonists.Count * Time.deltaTime / 60f;
+            constructionTaskList[i].building.constructedProgress = constructionTaskList[i].hoursContributed;
             //Check for completion
-            if (constructionTask.hoursContributed >= constructionTask.totalHours)
-                CompleteConstructionTask(constructionTask);
+            if (constructionTaskList[i].hoursContributed >= constructionTaskList[i].totalHours)
+                CompleteConstructionTask(constructionTaskList[i]);
         }
 	}
     public void CompleteConstructionTask(ConstructionTask task) {
         foreach (Colonist colonist in task.allocatedColonists) {
             GameController.Instance.colonistController.SetIdleColonist(colonist);
         }
+        task.building.currentStatus = Building.BuildingStatus.Ready;
         constructionTaskList.Remove(task);
     }
 }

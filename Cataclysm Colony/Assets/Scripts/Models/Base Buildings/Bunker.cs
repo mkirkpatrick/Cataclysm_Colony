@@ -6,8 +6,10 @@ using UnityEngine;
 public class Bunker : Building {
 
     public Bunker() {
-        this.buildingName = "Bunker";
-        this.totalColonistCapacity = 100;
-        this.allocatedColonists = new List<Colonist>();
+        buildingName = "Bunker";
+        totalConstructionHours = 600;
+        constructedProgress = totalConstructionHours;
+        totalColonistCapacity = 100;
+        allocatedColonists = new List<Colonist>();
     }
 }
