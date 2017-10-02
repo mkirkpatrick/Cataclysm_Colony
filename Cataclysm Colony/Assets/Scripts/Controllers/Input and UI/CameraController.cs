@@ -9,12 +9,12 @@ public class CameraController : MonoBehaviour
     private const int DragSpeed = 100;
 
     private const int ZoomSpeed = 60;
-    private const int ZoomMin = 60;
-    private const int ZoomMax = 200;
+    private const int ZoomMin = 80;
+    private const int ZoomMax = 160;
 
-    private const int PanSpeed = 50;
-    private const int PanAngleMin = 60;
-    private const int PanAngleMax = 80;
+    private const int PanSpeed = 10;
+    private const int PanAngleMin = 30;
+    private const int PanAngleMax = 50;
 
     // Update is called once per frame
     void Update()

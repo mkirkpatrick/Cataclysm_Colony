@@ -13,6 +13,7 @@ public class BaseController : MonoBehaviour {
 	public ConstructionController constructionController;
 	public PlotController plotController;
     public FactoryController factoryController;
+    public LaboratoryController laboratoryController;
 
 	void Awake(){
 		baseData = new Base();
@@ -25,8 +26,13 @@ public class BaseController : MonoBehaviour {
 		plotController.CreatePlotObjects ();
         ShowBase( base_obj );
 
+        //Construction Tests ?????????
         ConstructionTask newTask = new ConstructionTask(baseData.buildings[1]);
-        GameController.Instance.colonistController.AllocateColonistsToTask(newTask, 40);
+        GameController.Instance.colonistController.AllocateColonistsToTask(newTask, 20);
+        constructionController.constructionTaskList.Add(newTask);
+
+        newTask = new ConstructionTask(baseData.buildings[2]);
+        GameController.Instance.colonistController.AllocateColonistsToTask(newTask, 80);
         constructionController.constructionTaskList.Add(newTask);
 
     }
