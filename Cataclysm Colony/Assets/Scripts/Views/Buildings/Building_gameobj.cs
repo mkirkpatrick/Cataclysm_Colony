@@ -18,8 +18,8 @@ public class Building_gameobj : MonoBehaviour {
 
     void OnMouseDown()
     {
-            
-        if (UIController.Instance.lockOtherInput == false)
+
+        if ( (UIController.Instance.lockOtherInput == false) && (buildingData.currentStatus == Building.BuildingStatus.Ready) )
             UIController.Instance.OpenUI(uiObject);
 
     }

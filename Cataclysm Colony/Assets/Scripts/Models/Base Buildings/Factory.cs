@@ -10,7 +10,7 @@ public class Factory : Building {
 
     public Factory() {
         buildingName = "Factory";
-		totalConstructionHours = 600;
+		totalConstructionHours = 300;
         totalColonistCapacity = 100;
         allocatedColonists = new List<Colonist>();
         currentBuildTasks = new List<FactoryBuildTask>();

@@ -222,34 +222,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingData:
+    currentStatus: 0
     buildingName: 
+    totalColonistCapacity: 100
+    constructedProgress: 0
+    totalConstructionHours: 0
     plot:
       plotId: 0
       plotType: 0
       plotNum: 0
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        constructedProgress: 0
+        totalConstructionHours: 0
         plot:
           plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            constructedProgress: 0
+            totalConstructionHours: 0
             plot:
               plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                constructedProgress: 0
+                totalConstructionHours: 0
                 plot:
                   plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 100
-            totalColonistCapacity: 100
-        totalColonistCapacity: 100
-    totalColonistCapacity: 100
-  uiObject: 
+  uiObject: LaboratoryUI
 --- !u!136 &136503273226349342
 CapsuleCollider:
   m_ObjectHideFlags: 1

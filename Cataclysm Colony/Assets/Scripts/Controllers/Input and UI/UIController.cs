@@ -9,7 +9,8 @@ public class UIController : MonoBehaviour {
     public bool lockOtherInput = false;
 
     public FactoryUI factoryUI;
-	public InventoryUI inventoryUI;
+    public LaboratoryUI laboratoryUI;
+    public InventoryUI inventoryUI;
 
 	// Use this for initialization
 	void Awake () {
@@ -34,7 +35,10 @@ public class UIController : MonoBehaviour {
             case "FactoryUI":
                 factoryUI.gameObject.SetActive(true);
                 break;
-			case "InventoryUI":
+            case "LaboratoryUI":
+                laboratoryUI.gameObject.SetActive(true);
+                break;
+            case "InventoryUI":
 				inventoryUI.gameObject.SetActive(true);
 				break;
 
@@ -49,7 +53,10 @@ public class UIController : MonoBehaviour {
             case "FactoryUI":
                 factoryUI.gameObject.SetActive(false);
                 break;
-			case "InventoryUI":
+            case "LaboratoryUI":
+                laboratoryUI.gameObject.SetActive(false);
+                break;
+            case "InventoryUI":
 				inventoryUI.gameObject.SetActive(false);
 				break;
 

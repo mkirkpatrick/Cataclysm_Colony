@@ -28,6 +28,10 @@ public class TimeController : MonoBehaviour {
 			ChangeTimeScale (8);
 		else if (Input.GetKeyDown (KeyCode.Alpha3))
 			ChangeTimeScale (12);
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+            ChangeTimeScale(16);
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+            ChangeTimeScale(20);
 
         if (isPaused != true) {
             UpdateClocks();

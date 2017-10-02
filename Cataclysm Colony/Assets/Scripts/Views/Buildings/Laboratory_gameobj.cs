@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class Laboratory_gameobj : Building_gameobj {
 
+    LaboratoryController laboratoryController;
+
 	// Use this for initialization
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+        laboratoryController = GameController.Instance.baseController.laboratoryController;
 	}
 }
