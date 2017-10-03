@@ -9,17 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1053362293294744}
+  m_RootGameObject: {fileID: 1444960323388576}
   m_IsPrefabParent: 1
---- !u!1 &1053362293294744
+--- !u!1 &1444960323388576
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4909417826661908}
-  - component: {fileID: 114505165156497098}
+  - component: {fileID: 4284541978673100}
+  - component: {fileID: 33209440454648312}
+  - component: {fileID: 23062737266627952}
+  - component: {fileID: 95653979526611950}
+  - component: {fileID: 114648903818390610}
   m_Layer: 0
   m_Name: Bunker
   m_TagString: Untagged
@@ -27,184 +30,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1222674535530324
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4877353225235514}
-  - component: {fileID: 33043311950986344}
-  - component: {fileID: 23161131416763194}
-  m_Layer: 0
-  m_Name: Cylinder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1365388721957398
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4520248908787022}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1745719667715850
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4053998870835084}
-  - component: {fileID: 33515624255181808}
-  - component: {fileID: 23925265315173430}
-  m_Layer: 0
-  m_Name: Cylinder.001
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1771770179766718
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4530243665546158}
-  - component: {fileID: 33567270003520798}
-  - component: {fileID: 23598378198645976}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1959215543616196
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4356924374073512}
-  m_Layer: 0
-  m_Name: Lamp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4053998870835084
+--- !u!4 &4284541978673100
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1745719667715850}
-  m_LocalRotation: {x: 0.98234576, y: 0, z: 0, w: -0.18707442}
-  m_LocalPosition: {x: -0, y: 2.4741228, z: -0.13439204}
-  m_LocalScale: {x: 4.833629, y: 4.8336287, z: 4.8336287}
-  m_Children: []
-  m_Father: {fileID: 4909417826661908}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4356924374073512
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1959215543616196}
-  m_LocalRotation: {x: 0.16907571, y: -0.75588036, z: 0.27217132, w: 0.57094747}
-  m_LocalPosition: {x: -4.0762453, y: 5.903862, z: -1.005454}
-  m_LocalScale: {x: 100.00001, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 4909417826661908}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4520248908787022
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1365388721957398}
-  m_LocalRotation: {x: 0.21255729, y: 0.904797, z: -0.084389366, w: -0.35922173}
-  m_LocalPosition: {x: -7.4811316, y: 5.343665, z: 6.5076394}
-  m_LocalScale: {x: 100, y: 100.00001, z: 99.99999}
-  m_Children: []
-  m_Father: {fileID: 4909417826661908}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4530243665546158
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1771770179766718}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.25, z: -1.0066686}
-  m_LocalScale: {x: 24.91984, y: 24.91984, z: 24.91984}
-  m_Children: []
-  m_Father: {fileID: 4909417826661908}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4877353225235514
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222674535530324}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 50}
-  m_Children: []
-  m_Father: {fileID: 4909417826661908}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4909417826661908
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1053362293294744}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 1444960323388576}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
-  m_Children:
-  - {fileID: 4520248908787022}
-  - {fileID: 4530243665546158}
-  - {fileID: 4877353225235514}
-  - {fileID: 4053998870835084}
-  - {fileID: 4356924374073512}
+  m_LocalScale: {x: 8, y: 5, z: 8}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23161131416763194
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!23 &23062737266627952
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222674535530324}
+  m_GameObject: {fileID: 1444960323388576}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 1ee9bf425e0d22d42a24f7e22023c6a4, type: 2}
+  - {fileID: 2100000, guid: 8ed5d93af99c0b94e8e02b5f99fa8187, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -223,139 +75,79 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!23 &23598378198645976
-MeshRenderer:
+--- !u!33 &33209440454648312
+MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1771770179766718}
+  m_GameObject: {fileID: 1444960323388576}
+  m_Mesh: {fileID: 4300000, guid: f2b08e6a7de397b4e873907471d01093, type: 3}
+--- !u!95 &95653979526611950
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444960323388576}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 1ee9bf425e0d22d42a24f7e22023c6a4, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!23 &23925265315173430
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1745719667715850}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 1ee9bf425e0d22d42a24f7e22023c6a4, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &33043311950986344
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222674535530324}
-  m_Mesh: {fileID: 4300004, guid: 7ff54eb4288f7184dbdc7987f285c9c5, type: 3}
---- !u!33 &33515624255181808
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1745719667715850}
-  m_Mesh: {fileID: 4300000, guid: 7ff54eb4288f7184dbdc7987f285c9c5, type: 3}
---- !u!33 &33567270003520798
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1771770179766718}
-  m_Mesh: {fileID: 4300002, guid: 7ff54eb4288f7184dbdc7987f285c9c5, type: 3}
---- !u!114 &114505165156497098
+  m_Avatar: {fileID: 9000000, guid: f2b08e6a7de397b4e873907471d01093, type: 3}
+  m_Controller: {fileID: 9100000, guid: 8de2c19b579197347a3bf4dec48d3625, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114648903818390610
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1053362293294744}
+  m_GameObject: {fileID: 1444960323388576}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e91ce2b112bdc674999e1c7a1720b207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bunkerData:
+  buildingData:
+    currentStatus: 0
     buildingName: 
+    totalColonistCapacity: 100
+    constructedProgress: 0
+    totalConstructionHours: 0
     plot:
+      plotId: 0
       plotType: 0
       plotNum: 0
       building:
+        currentStatus: 0
         buildingName: 
+        totalColonistCapacity: 100
+        constructedProgress: 0
+        totalConstructionHours: 0
         plot:
+          plotId: 0
           plotType: 0
           plotNum: 0
           building:
+            currentStatus: 0
             buildingName: 
+            totalColonistCapacity: 100
+            constructedProgress: 0
+            totalConstructionHours: 0
             plot:
+              plotId: 0
               plotType: 0
               plotNum: 0
               building:
+                currentStatus: 0
                 buildingName: 
+                totalColonistCapacity: 100
+                constructedProgress: 0
+                totalConstructionHours: 0
                 plot:
+                  plotId: 0
                   plotType: 0
                   plotNum: 0
-                totalColonistCapacity: 10
-                jobCapacities: 00000000000000000000000000000000000000000000000000000000
-                jobCategory: 0
-                resourceGeneration: []
-                resourceCapacity: []
-            totalColonistCapacity: 10
-            jobCapacities: 00000000000000000000000000000000000000000000000000000000
-            jobCategory: 0
-            resourceGeneration: []
-            resourceCapacity: []
-        totalColonistCapacity: 10
-        jobCapacities: 00000000000000000000000000000000000000000000000000000000
-        jobCategory: 0
-        resourceGeneration: []
-        resourceCapacity: []
-    totalColonistCapacity: 0
-    jobCapacities: 
-    jobCategory: 0
-    resourceGeneration: []
-    resourceCapacity: []
+  uiObject: 

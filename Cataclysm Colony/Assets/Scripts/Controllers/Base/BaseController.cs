@@ -28,11 +28,11 @@ public class BaseController : MonoBehaviour {
 
         //Construction Tests ?????????
         ConstructionTask newTask = new ConstructionTask(baseData.buildings[1]);
-        GameController.Instance.colonistController.AllocateColonistsToTask(newTask, 20);
+        GameController.Instance.colonistController.AllocateColonistsToTask(newTask, 40);
         constructionController.constructionTaskList.Add(newTask);
 
         newTask = new ConstructionTask(baseData.buildings[2]);
-        GameController.Instance.colonistController.AllocateColonistsToTask(newTask, 80);
+        GameController.Instance.colonistController.AllocateColonistsToTask(newTask, 60);
         constructionController.constructionTaskList.Add(newTask);
 
     }
@@ -58,8 +58,8 @@ public class BaseController : MonoBehaviour {
 		Plot_gameobj plotParent = plotController.plots[building.plot.plotId];
 
 		plotParent.building_obj = build_obj.GetComponent<Building_gameobj>();
-		build_obj.transform.position = plotParent.transform.position;
-		build_obj.transform.eulerAngles = plotParent.transform.eulerAngles;
+		build_obj.transform.position += plotParent.transform.position;
+		build_obj.transform.eulerAngles += plotParent.transform.eulerAngles;
     }
 
 	public void AllocateColonistsToBuilding(Building building, int count){
