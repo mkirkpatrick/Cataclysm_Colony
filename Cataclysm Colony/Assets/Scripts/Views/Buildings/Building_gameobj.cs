@@ -7,9 +7,15 @@ public class Building_gameobj : MonoBehaviour {
     public Building buildingData;
     public string uiObject;
 
+    private Vector3 initialScale;
+
+    void Awake() {
+        initialScale = transform.localScale;
+    }
+
     void Update() {
         if (buildingData.currentStatus == Building.BuildingStatus.UnderConstruction) {
-            Vector3 newScale = new Vector3(15, 15 * (buildingData.constructedProgress / buildingData.totalConstructionHours),15);
+            Vector3 newScale = new Vector3(initialScale.x, initialScale.y * (buildingData.constructedProgress / buildingData.totalConstructionHours), initialScale.z);
             gameObject.transform.localScale = newScale;
         }
             
