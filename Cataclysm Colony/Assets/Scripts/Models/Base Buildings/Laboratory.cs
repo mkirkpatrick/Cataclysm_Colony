@@ -10,7 +10,7 @@ public class Laboratory : Building {
 
 	public Laboratory() {
 		buildingName = "Laboratory";
-		totalConstructionHours = 300;
+		totalConstructionHours = 50;
         totalColonistCapacity = 100;
 		allocatedColonists = new List<Colonist>();
         currentResearchTasks = new List<ResearchTask>();

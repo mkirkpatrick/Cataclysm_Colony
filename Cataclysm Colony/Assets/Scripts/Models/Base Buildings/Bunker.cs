@@ -9,6 +9,7 @@ public class Bunker : Building {
         buildingName = "Bunker";
         totalConstructionHours = 600;
         constructedProgress = totalConstructionHours;
+		currentStatus = BuildingStatus.Ready;
         totalColonistCapacity = 100;
         allocatedColonists = new List<Colonist>();
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResearchItem {
 
-    public enum ResearchType { Energy, Medical, Structural, Sensors, Robotics, Weapons}
+    public enum ResearchType { Energy, Structural, Medical, Sensory, Weaponry, Robotics}
 
     public int id = 0;
     public string name = "";
