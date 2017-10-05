@@ -6,8 +6,9 @@ public class Laboratory_gameobj : Building_gameobj {
 
     LaboratoryController laboratoryController;
 
-	// Use this for initialization
-	void Start () {
+    protected override void Start()
+    {
+        base.Start();
         laboratoryController = GameController.Instance.baseController.laboratoryController;
 	}
 }

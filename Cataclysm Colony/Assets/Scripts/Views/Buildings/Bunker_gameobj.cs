@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class Bunker_gameobj : Building_gameobj {
 
-	public bool baseStatus = false;
-
-    void Start() {
-        
+    protected override void Start() {
+        base.Start();
     }
 
 	void OnMouseDown()
 	{
-		if ((UIController.Instance.lockOtherInput == false) && (buildingData.currentStatus == Building.BuildingStatus.Ready))
-			baseStatus = true;
+        if ((UIController.Instance.lockOtherInput == false) && (buildingData.currentStatus == Building.BuildingStatus.Ready))
+            baseController.showBaseStatus = !baseController.showBaseStatus;
 
-	}
+    }
 }

@@ -6,7 +6,10 @@ public class Factory_gameobj : Building_gameobj {
 
     FactoryController factoryController;
 
-    void Start() {
+
+    protected override void Start()
+    {
+        base.Start();
         factoryController = GameController.Instance.baseController.factoryController;
     }
 }

@@ -15,6 +15,9 @@ public class BaseController : MonoBehaviour {
     public FactoryController factoryController;
     public LaboratoryController laboratoryController;
 
+    // Base Variables
+    public bool showBaseStatus;
+
 	void Awake(){
 		baseData = new Base();
 	}
@@ -60,6 +63,9 @@ public class BaseController : MonoBehaviour {
 		plotParent.building_obj = build_obj.GetComponent<Building_gameobj>();
 		build_obj.transform.position += plotParent.transform.position;
 		build_obj.transform.eulerAngles += plotParent.transform.eulerAngles;
+    }
+    public Building_gameobj GetBuildingObj(int id) {
+        return plotController.plots[id].building_obj;
     }
 
 	public void AllocateColonistsToBuilding(Building building, int count){
